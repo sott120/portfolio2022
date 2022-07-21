@@ -1,24 +1,13 @@
 <template>
-<div>
-<nav>
-  <ul>
-    <li>intro</li>
-    <li>about</li>
-    <li>project</li>
-    <li>clone</li>
-    <li v-on:click="goContact">contact</li>
-  </ul>
-</nav>
-  <intro></intro>
+  <top></top>
   <about></about>
   <project></project>
   <clone></clone>
   <contact id="contact"></contact>
-  </div>
 </template>
 
 <script>
-import intro from './components/intro.vue'
+import top from './components/top.vue'
 import about from './components/about.vue'
 import project from './components/project.vue'
 import clone from './components/clone.vue'
@@ -27,15 +16,15 @@ import contact from './components/contact.vue'
 export default {
   name: 'App',
   methods: {
-    goContact(){
-      const contact = document.getElementById('contact');
-      if(contact){
-        contact.scrollIntoView({ behavior: 'smooth' })
-      }
-    }
+    // goContact(){
+    //   const contact = document.getElementById('contact');
+    //   if(contact){
+    //     contact.scrollIntoView({ behavior: 'smooth' })
+    //   }
+    // }
   },
   components: {
-    intro,
+    top,
     about,
     project,
     clone,
@@ -44,14 +33,10 @@ export default {
 }
 </script>
 
-<style scoped>
-nav ul{
-  display: flex;
-}
-
-nav ul li{
-  padding: 5px 20px;
-  font-size: 20px;
-  cursor: pointer;
+<style>
+body{
+  margin: auto;
+  max-width: 1440px;
+  width: 100%;
 }
 </style>
