@@ -37,7 +37,7 @@
                     <span>(6개월)</span>
                   </div>
                   <div>
-                    <span>그린컴퓨터아카데미</span>
+                    <span><em>그린컴퓨터아카데미</em></span>
                     <span>스마트 뷰(Vue) 활용 프론트엔드 웹개발자 양성 과정 수료</span>
                   </div>
                 </li>
@@ -47,7 +47,7 @@
                     <span>(1년 2개월)</span>
                   </div>
                   <div>
-                    <span>스마트웰컴퍼니 주식회사  ( 아트팀 사원 / 웹디자이너 )</span>
+                    <span><em>스마트웰컴퍼니 주식회사</em>  ( 아트팀 사원 / 웹디자이너 )</span>
                     <span>
                       카페24 기반 쇼핑몰 관리 및 배너, 이벤트페이지 디자인
                       홈페이지 유지보수 작업과 광고 마케팅, seo등 유입 관리
@@ -60,7 +60,7 @@
                     <span>(4개월)</span>
                   </div>
                   <div>
-                    <span>주식회사 카우치포테이토 ( 인턴 / 디자인보조 )</span>
+                    <span><em>주식회사 카우치포테이토</em> ( 인턴 / 디자인보조 )</span>
                     <span>
                       패키지 디자인 보조 및 모션그래픽 영상 제작자사 캐릭터 드로잉, sns 업로드
                       실습 인턴 계약만료 후 알바로 전환
@@ -80,7 +80,7 @@
                     <span>2013.03 ~ 2016.02</span>
                   </div>
                   <div>
-                    <span>서울 성신여자고등학교 졸업</span>
+                    <span><em>서울 성신여자고등학교 졸업</em></span>
                   </div>
                 </li>
               </ul>
@@ -347,10 +347,6 @@ h1{
   margin-bottom: 50px;
 }
 
-.inner span{
-  display: block;
-}
-
 .modal_cont{
   box-sizing: border-box;
   border-right: 1px solid #fff; 
@@ -367,7 +363,8 @@ h1{
 }
 
 .inner span{
-  font-weight: 400;
+  display: block;
+  font-weight: 300;
 }
 
 .my h2{
@@ -380,6 +377,10 @@ h1{
 
 .my .modal_cont{
   padding-right:49px;
+}
+
+.my .modal_cont > .txt_wrap{
+  line-height: 2;
 }
 
 .inner .history{
@@ -430,7 +431,7 @@ h1{
 }
 
 .iam_cont span em{
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .skills_cont li{
