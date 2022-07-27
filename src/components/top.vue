@@ -1,5 +1,4 @@
 <template>
-  <div class="hello">
     <header>
     <h1>SOYEON</h1>
     <nav>
@@ -12,7 +11,6 @@
       </ul>
     </nav>
     </header>
-  </div>
 </template>
 
 <script>
@@ -26,11 +24,19 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.header_wrap{
+  height: 80px;
+}
+
 header{
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
   height: 80px;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  z-index: 999;
 }
 h1{
   font-family: 'Montserrat', sans-serif;
