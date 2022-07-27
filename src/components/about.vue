@@ -20,10 +20,10 @@
                 </div>
                 <div class="icon_wrap">
                   <a href="https://github.com/sott120" target='_blank'>
-                  <img src="../static/img/icon/github_white.svg" width="37px">
+                  <img src="../static/img/icon/github_white.svg">
                   </a>
                   <a href="https://sott120.tistory.com/" target="_blank">
-                  <img src="../static/img/icon/tistory.svg" width="38px">
+                  <img src="../static/img/icon/tistory.svg">
                   </a>
                 </div>  
               </div>  
@@ -49,7 +49,7 @@
                   <div>
                     <span><em>스마트웰컴퍼니 주식회사</em>  ( 아트팀 사원 / 웹디자이너 )</span>
                     <span>
-                      카페24 기반 쇼핑몰 관리 및 배너, 이벤트페이지 디자인
+                      카페24 기반 쇼핑몰 관리 및 배너, 이벤트페이지 디자인<br>
                       홈페이지 유지보수 작업과 광고 마케팅, seo등 유입 관리
                     </span>
                   </div>
@@ -62,7 +62,7 @@
                   <div>
                     <span><em>주식회사 카우치포테이토</em> ( 인턴 / 디자인보조 )</span>
                     <span>
-                      패키지 디자인 보조 및 모션그래픽 영상 제작자사 캐릭터 드로잉, sns 업로드
+                      패키지 디자인 보조 및 모션그래픽 영상 제작<br>자사 캐릭터 드로잉, sns 업로드<br>
                       실습 인턴 계약만료 후 알바로 전환
                     </span>
                   </div>
@@ -318,7 +318,7 @@ h1{
   left: 0;
   width: 100%;
   height: 100%;
-  /* background-color: rgba(0,0,0,60%); */
+  /* background-color: rgba(0,0,0,50%); */
   z-index: 99999;
 }
 
@@ -332,7 +332,7 @@ h1{
   width: 100%;
   height: 80vh; 
   margin: auto;
-  padding : 144px 64px 79px;
+  padding : 130px 64px 79px;
   box-sizing: border-box;
   background-color : #1E39B4;
   color: #fff;
@@ -350,12 +350,8 @@ h1{
 .modal_cont{
   box-sizing: border-box;
   border-right: 1px solid #fff; 
-  max-height: 449px;
+  max-height: 460px;
   height: 100%;
-}
-
-.inner .my{
-  flex: 2;
 }
 
 .inner em{
@@ -367,6 +363,10 @@ h1{
   font-weight: 300;
 }
 
+.inner .my{
+  flex: 2;
+}
+
 .my h2{
   padding-right: 35px;
   background-image: url(../static/img/icon/smile.svg);
@@ -376,6 +376,9 @@ h1{
 }
 
 .my .modal_cont{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   padding-right:49px;
 }
 
@@ -383,8 +386,17 @@ h1{
   line-height: 2;
 }
 
+.icon_wrap img{
+  width: 37px;
+  padding-right: 15px;
+}
+
 .inner .history{
   flex: 5;
+}
+
+.history h2{
+  margin-left: 49px;
 }
 
 .history .modal_cont{
