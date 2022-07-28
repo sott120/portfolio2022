@@ -8,9 +8,9 @@
  }
 
 body{
-    max-width: 1440px;
+    /* max-width: 1440px;
     width: 100%;
-    margin: 0 auto;
+    margin: 0 auto; */
     font-family: NotoSansKr;
     font-size: 16px;
     color: #1E39B4;
@@ -24,6 +24,11 @@ body{
 
 .kor{
     font-family: NotoSansKr;
+}
+
+h1{
+    font-size: 187px;
+    font-weight: 700;
 }
 
 h2{

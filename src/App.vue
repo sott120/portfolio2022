@@ -2,7 +2,7 @@
   <top></top>
   <about></about>
   <project></project>
-  <clone></clone>
+  <subproject></subproject>
   <contact id="contact"></contact>
 </template>
 
@@ -10,7 +10,7 @@
 import top from './components/top.vue'
 import about from './components/about.vue'
 import project from './components/project.vue'
-import clone from './components/clone.vue'
+import subproject from './components/subproject.vue'
 import contact from './components/contact.vue'
 
 export default {
@@ -27,16 +27,11 @@ export default {
     top,
     about,
     project,
-    clone,
+    subproject,
     contact,
   }
 }
 </script>
 
 <style>
-body{
-  margin: auto;
-  max-width: 1440px;
-  width: 100%;
-}
 </style>
