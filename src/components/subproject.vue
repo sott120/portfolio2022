@@ -4,9 +4,9 @@
       <h1>WEB PUBLISHER &amp;&amp; WEB FRONT-END DEVELOPER</h1>
       <h2 class="eng">SUB PROJECT</h2>
       <ul class="tab_ul eng">
-        <li class="tab_li active">all</li>
-        <li class="tab_li">web clone</li>
-        <li class="tab_li">toy project</li>
+        <li class="tab_li active">All</li>
+        <li class="tab_li">Web clone</li>
+        <li class="tab_li">Toy project</li>
       </ul>
       <ul class="tab_cont_ul">
         <li class="tab_cont_li">
@@ -17,11 +17,12 @@
             <span class="sub_desc">
               node.js와 mysql을 이용한 기본 CRUD 메모장입니다.
             </span>
+            <div class="hov_btn_wrap">
+              <div class="go_site"><a href="">Go to site</a></div>
+              <div class="go_github"><a href="">Go github</a></div>
           </div>
-          <div class="hov_btn_wrap">
-            <div class="go_site"><a href="">GO TO SITE</a></div>
-            <div class="go_github"><a href="">GO GITHUB</a></div>
           </div>
+          
         </li>
         <li class="tab_cont_li">
           <img src="../static/img/sub/daejeon.jpg" alt="memo image">
@@ -31,95 +32,11 @@
             <span class="sub_desc">
               node.js와 mysql을 이용한 기본 CRUD 메모장입니다.
             </span>
+            <div class="hov_btn_wrap clone">
+              <div class="go_site"><a href="">Main</a></div>
+              <div class="go_sub small"><a href="">Sub</a></div>
+              <div class="go_github small"><a href="">Git</a></div>
           </div>
-          <div class="hov_btn_wrap clone">
-            <div class="go_site"><a href="">GO TO SITE</a></div>
-            <div class="go_sub"><a href="">GO SUB</a></div>
-            <div class="go_github"><a href="">GO GITHUB</a></div>
-          </div>
-        </li>
-        <li class="tab_cont_li">
-          <img src="../static/img/sub/daejeon.jpg" alt="memo image">
-          <div>
-            <span class="sub_title"><em>나만의 메모장</em></span>
-            <span class="sub_title"><em>#html #css #js #node.js #mysql</em></span>
-            <span class="sub_title">
-              node.js와 mysql을 이용한 기본 CRUD 메모장입니다.
-            </span>
-          </div>
-          <div class=hov_btn_wrap>
-            <div class="go_site">GO TO SITE</div>
-            <div class="go_github">GO Github</div>
-          </div>
-        </li>
-        <li class="tab_cont_li">
-          <img src="../static/img/sub/daejeon.jpg" alt="memo image">
-          <div>
-            <span class="sub_title"><em>나만의 메모장</em></span>
-            <span class="sub_title"><em>#html #css #js #node.js #mysql</em></span>
-            <span class="sub_title">
-              node.js와 mysql을 이용한 기본 CRUD 메모장입니다.
-            </span>
-          </div>
-          <div class=hov_btn_wrap>
-            <div class="go_site">GO TO SITE</div>
-            <div class="go_github">GO Github</div>
-          </div>
-        </li>
-        <li class="tab_cont_li">
-          <img src="../static/img/sub/daejeon.jpg" alt="memo image">
-          <div>
-            <span class="sub_title"><em>나만의 메모장</em></span>
-            <span class="sub_title"><em>#html #css #js #node.js #mysql</em></span>
-            <span class="sub_title">
-              node.js와 mysql을 이용한 기본 CRUD 메모장입니다.
-            </span>
-          </div>
-          <div class=hov_btn_wrap>
-            <div class="go_site">GO TO SITE</div>
-            <div class="go_github">GO Github</div>
-          </div>
-        </li>
-        <li class="tab_cont_li">
-          <img src="../static/img/sub/daejeon.jpg" alt="memo image">
-          <div>
-            <span class="sub_title"><em>나만의 메모장</em></span>
-            <span class="sub_title"><em>#html #css #js #node.js #mysql</em></span>
-            <span class="sub_title">
-              node.js와 mysql을 이용한 기본 CRUD 메모장입니다.
-            </span>
-          </div>
-          <div class=hov_btn_wrap>
-            <div class="go_site">GO TO SITE</div>
-            <div class="go_github">GO Github</div>
-          </div>
-        </li>
-        <li class="tab_cont_li">
-          <img src="../static/img/sub/daejeon.jpg" alt="memo image">
-          <div>
-            <span class="sub_title"><em>나만의 메모장</em></span>
-            <span class="sub_title"><em>#html #css #js #node.js #mysql</em></span>
-            <span class="sub_title">
-              node.js와 mysql을 이용한 기본 CRUD 메모장입니다.
-            </span>
-          </div>
-          <div class=hov_btn_wrap>
-            <div class="go_site">GO TO SITE</div>
-            <div class="go_github">GO Github</div>
-          </div>
-        </li>
-        <li class="tab_cont_li">
-          <img src="../static/img/sub/daejeon.jpg" alt="memo image">
-          <div>
-            <span class="sub_title"><em>나만의 메모장</em></span>
-            <span class="sub_title"><em>#html #css #js #node.js #mysql</em></span>
-            <span class="sub_title">
-              node.js와 mysql을 이용한 기본 CRUD 메모장입니다.
-            </span>
-          </div>
-          <div class=hov_btn_wrap>
-            <div class="go_site">GO TO SITE</div>
-            <div class="go_github">GO Github</div>
           </div>
         </li>
       </ul>
@@ -143,6 +60,7 @@ export default {
   height: 100%;
   background-color: #1e39b4;
   padding-bottom: 400px;
+  overflow: hidden;
 }
 
 .sub_wrap{
@@ -153,7 +71,7 @@ export default {
 
 h1{
   font-family: "Montserrat";
-  position: absolute;
+  display: inline-block;
   color: #fff;
   white-space: nowrap;
 }
@@ -161,7 +79,11 @@ h1{
 h2{
   color: #fff;
   text-align: center;
-  padding: 400px 0 80px;
+  padding: 200px 0 80px;
+}
+
+em{
+  font-weight: 500;
 }
 
 .tab_ul{
@@ -177,6 +99,7 @@ h2{
     font-size: 18px;
     width: 10%;
     text-align: center;
+    cursor: pointer;
 }
 
 .tab_li.active{
@@ -203,7 +126,7 @@ h2{
   height: auto;
 }
 
-.hov_txt{
+.tab_cont_li .hov_txt{
   position: absolute;
   top: 0;
   left: 0;
@@ -212,6 +135,26 @@ h2{
   background-color: rgba(255, 255, 255, 80%);
   padding: 40px 30px;
   box-sizing: border-box;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.tab_cont_li:hover .hov_txt{
+  opacity: 1;
+}
+
+.hov_txt span{
+  display: block;
+  padding-bottom: 10px;
+}
+
+.hov_txt .sub_title{
+  font-size: 24px;
+  padding-bottom: 5px;
+}
+
+.hov_txt .sub_stack{
+  font-size: 18px;
 }
 
 .hov_btn_wrap{
@@ -248,6 +191,9 @@ h2{
 .hov_btn_wrap .go_site a,
 .hov_btn_wrap .go_sub a,
 .hov_btn_wrap .go_github a{
+  position: relative;
+  font-family: "Montserrat";
+  font-weight: 400;
   color: #fff;
   display: block;
   width: 100%;
@@ -258,5 +204,47 @@ h2{
 
 .hov_btn_wrap .go_sub a{
   color: #000;
+}
+
+.hov_btn_wrap > .go_site a::after,
+.hov_btn_wrap > .go_github a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 12px;
+  bottom: 15px;
+  left: 5px;
+  background-image: url(../static/img/icon/btn_arrow_big.png);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: transform 0.3s, opacity 0.3s ease-in-out;
+}
+.hov_btn_wrap > .go_site:hover a::after,
+.hov_btn_wrap > .go_github:hover a::after {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.hov_btn_wrap > div.go_sub a::after,
+.hov_btn_wrap.clone > div.go_github a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 12px;
+  bottom: 15px;
+  left: 6px;
+  background-image: url(../static/img/icon/btn_arrow_small.png);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: transform 0.3s, opacity 0.3s ease-in-out;
+}
+.hov_btn_wrap > div.go_sub:hover a::after,
+.hov_btn_wrap.clone > div.go_github:hover a::after {
+  opacity: 1;
+  transform: translateX(0);
 }
 </style>
