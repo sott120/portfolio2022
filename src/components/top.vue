@@ -24,19 +24,19 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.header_wrap{
-  height: 80px;
-}
-
 header{
   position: sticky;
   position: -webkit-sticky;
   top: 0;
+  max-width: 1440px;
+  width: 100%;
   height: 80px;
+  margin: auto;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
   z-index: 999;
+  
 }
 h1{
   font-family: 'Montserrat', sans-serif;

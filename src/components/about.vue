@@ -1,5 +1,5 @@
 <template>
-  <div class="hello">
+  <div class="about_wrap">
     <div class="about_title">
       <section class="left_side">  
         <svg style="enable-background:new 0 0 706.5 207.4;">
@@ -10,6 +10,10 @@
         <h1>ME.</h1>
         <article class="info_modal">
           <div class="inner">
+            <div class="close">
+              <div class="close_l"></div>
+              <div class="close_r"></div>
+            </div>
             <div class="my">
               <h2 class="eng">I am</h2>
               <div class="modal_cont">
@@ -87,6 +91,38 @@
             </div>
             <div class="awards">
               <h2 class="eng">Awards · Certificate</h2>
+                <ul class="modal_cont">
+                  <li>
+                    <div class="awd_num">
+                      <span>2021.09</span>
+                      <span>(자격증)&nbsp;&nbsp;&nbsp;</span>
+                    </div>
+                    <div>
+                      <span><em>한국산업인력공단</em></span>
+                      <span>웹디자인기능사 최종합격</span>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="awd_num">
+                      <span>2019.12</span>
+                      <span>(수상내역)</span>
+                    </div>
+                    <div>
+                      <span><em>한국디자인트렌드학회</em></span>
+                      <span>2019국제사이버디자인트렌드공모전 입선</span>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="awd_num">
+                      <span>2019.10</span>
+                      <span>(수상내역)</span>
+                    </div>
+                    <div>
+                      <span><em>인덕대학교</em></span>
+                      <span>2019년 멀티미디어학과 졸업전시회 우수상</span>
+                    </div>
+                  </li>
+                </ul>
             </div>
           </div>
         </article>
@@ -262,6 +298,12 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.about_wrap{
+  width: 100%;
+  max-width: 1440px;
+  margin: auto;
+}
+
 .about_title{
   display: flex;
 }
@@ -295,7 +337,6 @@ text {
 }
 
 h1{
-  font-size: 30px;
   font-family: 'Montserrat';
   font-size: 187px;
   font-weight: 700;
@@ -312,13 +353,15 @@ h1{
   top: 300px;
 }
 
+/* 모달시작 */
 .info_modal{
+  display: none;
   position : absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  /* background-color: rgba(0,0,0,50%); */
+  background-color: rgba(0,0,0,50%);
   z-index: 99999;
 }
 
@@ -338,8 +381,30 @@ h1{
   color: #fff;
 }
 
-.inner > div{
+.close{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  right: 64px;
+  top: 64px;
+  cursor: pointer;
+}
 
+.close > div{
+  width: 70px;
+  height: 1px;
+  background-color: #fff;
+}
+
+.close .close_l{
+  transform: rotate(45deg);
+  transform-origin:0;
+}
+.close .close_r{
+    transform: rotate(-45deg);
+    transform-origin: 0;
+    position: relative;
+    top: 49px;
 }
 
 .inner > div > h2{
@@ -364,7 +429,7 @@ h1{
 }
 
 .inner .my{
-  flex: 2;
+  flex: 1.5;
 }
 
 .my h2{
@@ -417,6 +482,26 @@ h1{
   flex: 3;
 }
 
+.awards h2{
+  margin-left: 49px;
+}
+
+.awards .modal_cont{
+  padding-left: 49px;
+  border: none;
+}
+
+.awards li{
+  display: flex;
+  padding-bottom: 50px;
+}
+
+.awd_num{
+    padding-right: 25px;
+    white-space: nowrap;
+}
+/* 모달 끝 */
+
 .iam{
   margin-top: 50px;
   margin-bottom: 340px;
@@ -455,12 +540,12 @@ h1{
 
 .skill_L{
   flex:2.5;
-  display: table;
+  display: flex;
+  align-items: center;
 }
 
 .skill_L img{
-  display: table-cell;
-  vertical-align: middle;
+  padding-right: 10px;
 }
 
 .skill_L span{
