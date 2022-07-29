@@ -1,7 +1,16 @@
 <template>
   <div class="sub">
     <section class="sub_wrap">
-      <h1>WEB PUBLISHER &amp;&amp; WEB FRONT-END DEVELOPER</h1>
+      <div class="aaa">
+      <span class="txtani_wrap">
+        <h1>WEB PUBLISHER &amp;&amp; WEB FRONT-END DEVELOPER</h1>
+        <h1>WEB PUBLISHER &amp;&amp; WEB FRONT-END DEVELOPER</h1>
+      </span>
+      <span class="txtani_wrap">
+        <h1>WEB PUBLISHER &amp;&amp; WEB FRONT-END DEVELOPER</h1>
+        <h1>WEB PUBLISHER &amp;&amp; WEB FRONT-END DEVELOPER</h1>
+      </span>
+      </div>
       <h2 class="eng">SUB PROJECT</h2>
       <ul class="tab_ul eng">
         <li class="tab_li active">All</li>
@@ -20,24 +29,98 @@
             <div class="hov_btn_wrap">
               <div class="go_site"><a href="">Go to site</a></div>
               <div class="go_github"><a href="">Go github</a></div>
+            </div>
           </div>
-          </div>
-          
         </li>
         <li class="tab_cont_li">
-          <img src="../static/img/sub/daejeon.jpg" alt="memo image">
+          <img src="../static/img/sub/todo.jpg" alt="todo image">
           <div class="hov_txt">
-            <span class="sub_title"><em>나만의 메모장</em></span>
-            <span class="sub_stack"><em>#html #css #js #node.js #mysql</em></span>
+            <span class="sub_title"><em>To do list</em></span>
+            <span class="sub_stack"><em>#html #css #js</em></span>
             <span class="sub_desc">
-              node.js와 mysql을 이용한 기본 CRUD 메모장입니다.
+              할일을 추가하고 삭제할 수 있는 to do list입니다.
+            </span>
+            <div class="hov_btn_wrap">
+              <div class="go_site"><a href="">Go to site</a></div>
+              <div class="go_github"><a href="">Go github</a></div>
+            </div>
+          </div>
+        </li>
+        <li class="tab_cont_li">
+          <img src="../static/img/sub/pollex.jpg" alt="pollex zone image">
+          <div class="hov_txt">
+            <span class="sub_title"><em>Pollex zone</em></span>
+            <span class="sub_stack"><em>#html #css #js</em></span>
+            <span class="sub_desc">
+              폴렉스존 웹사이트 클론코딩입니다.
             </span>
             <div class="hov_btn_wrap clone">
               <div class="go_site"><a href="">Main</a></div>
               <div class="go_sub small"><a href="">Sub</a></div>
               <div class="go_github small"><a href="">Git</a></div>
+            </div>
           </div>
+        </li>
+        <li class="tab_cont_li">
+          <img src="../static/img/sub/daejeon.jpg" alt="memo image">
+          <div class="hov_txt">
+            <span class="sub_title"><em>대전문화재단</em></span>
+            <span class="sub_stack"><em>#html #css #js</em></span>
+            <span class="sub_desc">
+              대전문화재단 웹사이트 클론코딩입니다.
+            </span>
+            <div class="hov_btn_wrap clone">
+              <div class="go_site"><a href="">Main</a></div>
+              <div class="go_sub small"><a href="">Sub</a></div>
+              <div class="go_github small"><a href="">Git</a></div>
+            </div>
           </div>
+        </li>
+        <li class="tab_cont_li">
+          <img src="../static/img/sub/garden.jpg" alt="싱그러운집 image">
+          <div class="hov_txt">
+            <span class="sub_title"><em>싱그러운집</em></span>
+            <span class="sub_stack"><em>#html #css #js</em></span>
+            <span class="sub_desc">
+              싱그러운집 웹사이트 클론코딩입니다.
+            </span>
+            <div class="hov_btn_wrap clone">
+              <div class="go_site"><a href="">Main</a></div>
+              <div class="go_sub small"><a href="">Sub</a></div>
+              <div class="go_github small"><a href="">Git</a></div>
+            </div>
+          </div>
+        </li>
+        <li class="tab_cont_li">
+          <img src="../static/img/sub/card2.jpg" alt="등록증만들기 image">
+          <div class="hov_txt">
+            <span class="sub_title"><em>나만의 등록증 만들기</em></span>
+            <span class="sub_stack"><em>#html #css #js</em></span>
+            <span class="sub_desc">
+              나만의 등록증을 만들고 jpg파일로 저장할 수 있는 사이트입니다.
+            </span>
+            <div class="hov_btn_wrap">
+              <div class="go_site"><a href="">Go to site</a></div>
+              <div class="go_github"><a href="">Go github</a></div>
+            </div>
+          </div>
+        </li>
+        <li class="tab_cont_li">
+          <img src="../static/img/sub/rcp.jpg" alt="가위바위보 image">
+          <div class="hov_txt">
+            <span class="sub_title"><em>컴퓨터와 가위바위보</em></span>
+            <span class="sub_stack"><em>#html #css #js</em></span>
+            <span class="sub_desc">
+              컴퓨터와 가위바위보 게임을 할 수 있는 사이트입니다.
+            </span>
+            <div class="hov_btn_wrap">
+              <div class="go_site"><a href="">Go to site</a></div>
+              <div class="go_github"><a href="">Go github</a></div>
+            </div>
+          </div>
+        </li>
+        <li class="tab_cont_li smile">
+          <img src="../static/img/sub/smile.png" alt="빈공간 image">
         </li>
       </ul>
     </section>
@@ -69,11 +152,36 @@ export default {
   margin: auto;
 }
 
+.aaa{
+  white-space: nowrap;
+  line-height: 1;
+}
+
+.txtani_wrap{
+  display: inline-block;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-name: Marquee;
+  animation-name: Marquee;
+  animation-duration: 27.5682s;
+}
+@-webkit-keyframes Marquee {
+    from {-webkit-transform: translateX(0%);transform: translateX(0%);}
+    to {-webkit-transform: translateX(-100%);transform: translateX(-100%);}
+}
+@keyframes Marquee {
+    from {-webkit-transform: translateX(0%);transform: translateX(0%);}
+    to {-webkit-transform: translateX(-100%);transform: translateX(-100%);}
+}
+
 h1{
   font-family: "Montserrat";
-  display: inline-block;
+  display: inline;
   color: #fff;
   white-space: nowrap;
+  margin-left: 50px;
 }
 
 h2{
@@ -119,11 +227,24 @@ em{
   width: calc(25% - 20px);
   height: 283px;
   margin: 10px;
+  background-color: #fff;
 }
 
 .tab_cont_li img{
   width: 100%;
   height: auto;
+}
+
+.tab_cont_li.smile{
+  background-color: transparent;
+}
+
+.tab_cont_li.smile img{
+  width: 60%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .tab_cont_li .hov_txt{

@@ -3,6 +3,7 @@
   <about></about>
   <project></project>
   <subproject></subproject>
+  <blog></blog>
   <contact id="contact"></contact>
 </template>
 
@@ -12,6 +13,7 @@ import about from './components/about.vue'
 import project from './components/project.vue'
 import subproject from './components/subproject.vue'
 import contact from './components/contact.vue'
+import blog from './components/blog.vue'
 
 export default {
   name: 'App',
@@ -29,6 +31,7 @@ export default {
     project,
     subproject,
     contact,
+    blog
   }
 }
 </script>
