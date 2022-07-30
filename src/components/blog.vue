@@ -1,5 +1,5 @@
 <template>
-  <div class="blog_wrap">
+  <div id="blog" class="blog_wrap">
     <h2 class="eng">New post</h2>
     <p class="gotoblog eng"><a href="https://sott120.tistory.com/" target="_blank">Go to blog</a></p>
     <ul class="crolling_ul">

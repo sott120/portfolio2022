@@ -1,8 +1,8 @@
 <template>
-  <div class="sub">
+  <div id="sub" class="sub">
     <section class="sub_wrap">
-      <div class="aaa">
-      <span class="txtani_wrap">
+      <div class="txtani_wrap">
+      <span class="txtani_li">
         <h1>WEB PUBLISHER &amp;&amp; WEB FRONT-END DEVELOPER</h1>
         <h1>WEB PUBLISHER &amp;&amp; WEB FRONT-END DEVELOPER</h1>
       </span>
@@ -152,12 +152,11 @@ export default {
   margin: auto;
 }
 
-.aaa{
+.txtani_wrap{
   white-space: nowrap;
-  line-height: 1;
 }
 
-.txtani_wrap{
+.txtani_li{
   display: inline-block;
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;

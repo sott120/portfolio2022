@@ -1,5 +1,5 @@
 <template>
-  <div class="about_wrap">
+  <div id="about" class="about_wrap">
     <div class="about_title">
       <section class="left_side">  
         <svg style="enable-background:new 0 0 706.5 207.4;">
@@ -8,9 +8,9 @@
       </section>
       <section class="right_side">  
         <h1>ME.</h1>
-        <article class="info_modal">
+        <article  v-show="modal == true"  class="info_modal">
           <div class="inner">
-            <div class="close">
+            <div @click="[modal = false, noScroll()]" class="close">
               <div class="close_l"></div>
               <div class="close_r"></div>
             </div>
@@ -129,7 +129,7 @@
         <article class="iam ml_122">
           <div class="title eng mb_80">
             <h2>I am</h2>
-            <span>more info</span>
+            <span @click="[modal = true, noScroll()]">more info</span>
           </div>
           <div class="iam_cont mt_80">
               <span>안녕하세요,</span><br>
@@ -291,8 +291,22 @@
 export default {
   name: 'about-page',
   props: {
-  
-  }
+  },
+  data(){
+    return{
+      modal : false,
+    }
+  },
+   methods: {
+    noScroll(){
+      let body = document.getElementsByTagName('body')[0];
+      if(this.modal === true){
+        body.style.overflow = 'hidden';
+      } else {
+        body.style.overflow = 'visible';
+      }
+    }
+  },
 }
 </script>
 
@@ -355,8 +369,7 @@ h1{
 
 /* 모달시작 */
 .info_modal{
-  display: none;
-  position : absolute;
+  position : fixed;
   top: 0;
   left: 0;
   width: 100%;

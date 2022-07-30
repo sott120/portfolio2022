@@ -1,5 +1,5 @@
 <template>
-  <div class="contact_wrap">
+  <div id="contact" class="contact_wrap">
     <h2 class="eng">Contact me!</h2>
     <div class="arw_wrap">
       <img src="../static/img/icon/arrow_down.png" alt="down arrow">
@@ -14,11 +14,11 @@
   <footer>
     <div class="ft_wrap">
       <ul>
-        <li><a href="">About me</a> </li>
-        <li><a href="">Main project</a> </li>
-        <li><a href="">Sub project</a> </li>
-        <li><a href="">New post</a> </li>
-        <li><a href="">Contact</a> </li>
+        <li>About me</li>
+        <li>Main project</li>
+        <li>Sub project</li>
+        <li>New post</li>
+        <li>Contact</li>
       </ul>
       <div class="icon_wrap">
         <a href="https://github.com/sott120" target='_blank'>
@@ -111,13 +111,11 @@ footer{
 
 .ft_wrap li{
   padding-bottom: 10px;
-}
-
-.ft_wrap li > a{
   color: #fff;
   font-size: 24px;
   font-weight: 700;
   font-family: "Montserrat";
+  cursor: pointer;
 }
 
 .ft_wrap p{
