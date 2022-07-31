@@ -142,7 +142,7 @@
         <article class="skills ml_122">
           <div class="title eng mb_80">
             <h2>Skills</h2>
-            <span>more info</span>
+            <!-- <span>more info</span> -->
           </div>
           <ul class="skills_cont mb_100 eng">
               <li>
@@ -150,7 +150,7 @@
                   <img src="../static/img/icon/html.svg" height="30px">
                   <span>HTML5</span>
                 </div>
-                <div class="skill_R">
+                <!-- <div class="skill_R">
                   <div class="skill_bar">
                     <div class="skill_full"></div>
                     <div class="skill_gage g80"></div>
@@ -159,14 +159,14 @@
                       웹 표준과 웹 접근성을 준수하기 위해 HTML5에서 권장하는
                       마크업 방식과 시멘틱 태그를 이용해 레이아웃을 설계합니다.
                   </div>
-                </div>
+                </div> -->
               </li>
               <li>
                 <div class="skill_L">
                   <img src="../static/img/icon/css.svg" height="30px">
                   <span>CSS3</span>
                 </div>
-                <div class="skill_R">
+                <!-- <div class="skill_R">
                   <div class="skill_bar">
                     <div class="skill_full"></div>
                     <div class="skill_gage g80"></div>
@@ -174,14 +174,14 @@
                   <div class="skill_dsc">
                       반응형 레이아웃 제작이 가능하고 css 애니메이션을 좋아합니다.
                   </div>
-                </div>
+                </div> -->
               </li>
               <li>
                 <div class="skill_L">
                   <img src="../static/img/icon/javascript.svg" height="30px">
                   <span>javascript</span>
                 </div>
-                <div class="skill_R">
+                <!-- <div class="skill_R">
                   <div class="skill_bar">
                     <div class="skill_full"></div>
                     <div class="skill_gage g70"></div>
@@ -190,14 +190,14 @@
                       바닐라js로 스크립트를 구현하는것을 좋아합니다. 소스코드를 이해하고 편집/응용이 가능하며, 
                       간단한 동적요소는 직접 로직을 짜서 구현할 수 있습니다.
                   </div>
-                </div>
+                </div> -->
               </li>
               <li>
                 <div class="skill_L">
                   <img src="../static/img/icon/vue.svg" height="30px">
                   <span>Vue.js</span>
                 </div>
-                <div class="skill_R">
+                <!-- <div class="skill_R">
                   <div class="skill_bar">
                     <div class="skill_full"></div>
                     <div class="skill_gage g60"></div>
@@ -205,14 +205,14 @@
                   <div class="skill_dsc">
                       vue 템플릿구문을 사용할 수 있고, 컴포넌트를 분리하여 작업이 가능합니다.
                   </div>
-                </div>
+                </div> -->
               </li>
               <li>
                 <div class="skill_L">
                   <img src="../static/img/icon/nodejs.svg" height="30px">
                   <span>Node.js</span>
                 </div>
-                <div class="skill_R">
+                <!-- <div class="skill_R">
                   <div class="skill_bar">
                     <div class="skill_full"></div>
                     <div class="skill_gage g60"></div>
@@ -221,14 +221,14 @@
                       서버를 열고 스크립트를 모듈화 시킬 수 있으며, node express와 ejs를 사용할 수 있고, 
                       mysql DB를 연동하여 CRUD 기능을 구현할 수 있습니다.
                   </div>
-                </div>
+                </div> -->
               </li>
               <li>
                 <div class="skill_L">
                   <img src="../static/img/icon/database.svg" height="30px">
                   <span>MySQL</span>
                 </div>
-                <div class="skill_R">
+                <!-- <div class="skill_R">
                   <div class="skill_bar">
                     <div class="skill_full"></div>
                     <div class="skill_gage g60"></div>
@@ -237,14 +237,14 @@
                       워크밴치 사용이 가능하며, 기본적인 sql 구문과 변수 생성, 
                       서브쿼리를 사용한 다소 복잡한 쿼리문을 작성할 수 있습니다.
                   </div>
-                </div>
+                </div> -->
               </li>
               <li>
                 <div class="skill_L">
                   <img src="../static/img/icon/git.svg" height="30px">
                   <span>Git</span>
                 </div>
-                <div class="skill_R">
+                <!-- <div class="skill_R">
                   <div class="skill_bar">
                     <div class="skill_full"></div>
                     <div class="skill_gage g50"></div>
@@ -253,7 +253,7 @@
                       Repository 생성과 remote, read me 작성이 가능하며, 깃을 통해 협업을 해본적은 없지만 
                       기초적인 명령어(add, commit, push, pull, clone 등)를 git bash를 통해 작성할 수 있습니다.
                   </div>
-                </div>
+                </div> -->
               </li>
           </ul>
           <div class="title eng mb_80">
@@ -282,7 +282,8 @@
         </article>
       </section>  
     </div>
-    <div class="my_img">
+    <div @click="imgFix()" id="profile" class="my_img">
+      <img src="../static/img/profile_blue.jpg" alt="">
     </div>
   </div>
 </template>
@@ -305,6 +306,17 @@ export default {
       } else {
         body.style.overflow = 'visible';
       }
+    },
+    imgFix(){
+      // const profile = document.getElementById('profile');
+      const project = document.getElementById('main');
+      let prjPosition = project.getBoundingClientRect().top;
+      console.log(prjPosition);
+        // if(prjPosition){
+        //     profile.classList.add('end');
+        // } else {
+        //   profile.classList.remove('end');
+        // }
     }
   },
 }
@@ -316,6 +328,7 @@ export default {
   width: 100%;
   max-width: 1440px;
   margin: auto;
+  scroll-margin: 80px
 }
 
 .about_title{
@@ -363,8 +376,23 @@ h1{
   width: 100%;
   height: 474px;
   background-color: beige;
-  position: absolute;
+  position: fixed;
   top: 300px;
+  overflow: hidden;
+}
+
+.end.my_img{
+  position: absolute;
+  top: 1196px;
+}
+
+.my_img img{
+  position: relative;
+  transform: translate(-50%,0);
+  bottom: 10%;
+  left: 50%;
+  width: 110%;
+  object-fit: cover;
 }
 
 /* 모달시작 */
@@ -544,11 +572,17 @@ h1{
   font-weight: 600;
 }
 
+.skills_cont{
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .skills_cont li{
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   margin-bottom: 30px;
+  margin-right: 45px;
 }
 
 .skill_L{
