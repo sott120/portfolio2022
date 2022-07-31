@@ -139,7 +139,7 @@
               </span>
           </div>
         </article>
-        <article class="skills ml_122">
+        <article id="skills" class="skills ml_122">
           <div class="title eng mb_80">
             <h2>Skills</h2>
             <!-- <span>more info</span> -->
@@ -282,7 +282,7 @@
         </article>
       </section>  
     </div>
-    <div @click="imgFix()" id="profile" class="my_img">
+    <div id="profile" class="my_img">
       <img src="../static/img/profile_blue.jpg" alt="">
     </div>
   </div>
@@ -298,8 +298,11 @@ export default {
       modal : false,
     }
   },
-   methods: {
-    noScroll(){
+  created: function () {
+    window.addEventListener('scroll', this.imgFix);
+  },
+  methods: {
+    noScroll : function(){
       let body = document.getElementsByTagName('body')[0];
       if(this.modal === true){
         body.style.overflow = 'hidden';
@@ -307,18 +310,21 @@ export default {
         body.style.overflow = 'visible';
       }
     },
-    imgFix(){
-      // const profile = document.getElementById('profile');
-      const project = document.getElementById('main');
-      let prjPosition = project.getBoundingClientRect().top;
-      console.log(prjPosition);
-        // if(prjPosition){
-        //     profile.classList.add('end');
-        // } else {
-        //   profile.classList.remove('end');
-        // }
-    }
+    imgFix : function(){
+      const profile = document.getElementById('profile');
+      const skills = document.getElementById('skills');
+      let skillsPosition = skills.getBoundingClientRect().top;
+      const scrolledTopLength = window.pageYOffset;
+      const absoluteTop = scrolledTopLength + skillsPosition - 100;
+      console.log(absoluteTop);
+        if(scrolledTopLength > absoluteTop){
+            profile.classList.add('end');
+        } else {
+          profile.classList.remove('end');
+        }
+    },
   },
+  
 }
 </script>
 
@@ -374,7 +380,7 @@ h1{
 .my_img{
   max-width: 710px;
   width: 100%;
-  height: 474px;
+  height: 500px;
   background-color: beige;
   position: fixed;
   top: 300px;
@@ -383,13 +389,13 @@ h1{
 
 .end.my_img{
   position: absolute;
-  top: 1196px;
+  top: 1170px;
 }
 
 .my_img img{
   position: relative;
-  transform: translate(-50%,0);
-  bottom: 10%;
+  transform: translate(-50%,-50%);
+  top: 50%;
   left: 50%;
   width: 110%;
   object-fit: cover;
