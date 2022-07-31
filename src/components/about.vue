@@ -142,118 +142,49 @@
         <article id="skills" class="skills ml_122">
           <div class="title eng mb_80">
             <h2>Skills</h2>
-            <!-- <span>more info</span> -->
           </div>
           <ul class="skills_cont mb_100 eng">
               <li>
                 <div class="skill_L">
-                  <img src="../static/img/icon/html.svg" height="30px">
+                  <img src="../static/img/icon/html.svg" height="33px">
                   <span>HTML5</span>
                 </div>
-                <!-- <div class="skill_R">
-                  <div class="skill_bar">
-                    <div class="skill_full"></div>
-                    <div class="skill_gage g80"></div>
-                  </div>
-                  <div class="skill_dsc">
-                      웹 표준과 웹 접근성을 준수하기 위해 HTML5에서 권장하는
-                      마크업 방식과 시멘틱 태그를 이용해 레이아웃을 설계합니다.
-                  </div>
-                </div> -->
               </li>
               <li>
                 <div class="skill_L">
                   <img src="../static/img/icon/css.svg" height="30px">
                   <span>CSS3</span>
                 </div>
-                <!-- <div class="skill_R">
-                  <div class="skill_bar">
-                    <div class="skill_full"></div>
-                    <div class="skill_gage g80"></div>
-                  </div>
-                  <div class="skill_dsc">
-                      반응형 레이아웃 제작이 가능하고 css 애니메이션을 좋아합니다.
-                  </div>
-                </div> -->
               </li>
               <li>
                 <div class="skill_L">
                   <img src="../static/img/icon/javascript.svg" height="30px">
                   <span>javascript</span>
                 </div>
-                <!-- <div class="skill_R">
-                  <div class="skill_bar">
-                    <div class="skill_full"></div>
-                    <div class="skill_gage g70"></div>
-                  </div>
-                  <div class="skill_dsc">
-                      바닐라js로 스크립트를 구현하는것을 좋아합니다. 소스코드를 이해하고 편집/응용이 가능하며, 
-                      간단한 동적요소는 직접 로직을 짜서 구현할 수 있습니다.
-                  </div>
-                </div> -->
               </li>
               <li>
                 <div class="skill_L">
                   <img src="../static/img/icon/vue.svg" height="30px">
                   <span>Vue.js</span>
                 </div>
-                <!-- <div class="skill_R">
-                  <div class="skill_bar">
-                    <div class="skill_full"></div>
-                    <div class="skill_gage g60"></div>
-                  </div>
-                  <div class="skill_dsc">
-                      vue 템플릿구문을 사용할 수 있고, 컴포넌트를 분리하여 작업이 가능합니다.
-                  </div>
-                </div> -->
               </li>
               <li>
                 <div class="skill_L">
                   <img src="../static/img/icon/nodejs.svg" height="30px">
                   <span>Node.js</span>
                 </div>
-                <!-- <div class="skill_R">
-                  <div class="skill_bar">
-                    <div class="skill_full"></div>
-                    <div class="skill_gage g60"></div>
-                  </div>
-                  <div class="skill_dsc">
-                      서버를 열고 스크립트를 모듈화 시킬 수 있으며, node express와 ejs를 사용할 수 있고, 
-                      mysql DB를 연동하여 CRUD 기능을 구현할 수 있습니다.
-                  </div>
-                </div> -->
               </li>
               <li>
                 <div class="skill_L">
                   <img src="../static/img/icon/database.svg" height="30px">
                   <span>MySQL</span>
                 </div>
-                <!-- <div class="skill_R">
-                  <div class="skill_bar">
-                    <div class="skill_full"></div>
-                    <div class="skill_gage g60"></div>
-                  </div>
-                  <div class="skill_dsc">
-                      워크밴치 사용이 가능하며, 기본적인 sql 구문과 변수 생성, 
-                      서브쿼리를 사용한 다소 복잡한 쿼리문을 작성할 수 있습니다.
-                  </div>
-                </div> -->
               </li>
               <li>
                 <div class="skill_L">
                   <img src="../static/img/icon/git.svg" height="30px">
                   <span>Git</span>
                 </div>
-                <!-- <div class="skill_R">
-                  <div class="skill_bar">
-                    <div class="skill_full"></div>
-                    <div class="skill_gage g50"></div>
-                  </div>
-                  <div class="skill_dsc">
-                      Repository 생성과 remote, read me 작성이 가능하며, 깃을 통해 협업을 해본적은 없지만 
-                      기초적인 명령어(add, commit, push, pull, clone 등)를 git bash를 통해 작성할 수 있습니다.
-                  </div>
-                </div> -->
               </li>
           </ul>
           <div class="title eng mb_80">
@@ -261,16 +192,68 @@
           </div>
           <ul class="skill_others eng">
             <li>
-              <span>Develope tools</span>
-              <p>
-                VScode, Bootstrap, Heroku, Firebase
-              </p>
+              <span>Develop tools</span>
+              <ul class="skills_cont mb_100 eng">
+                <li>
+                  <div class="skill_L">
+                    <img src="../static/img/icon/vscode.png" height="20px">
+                    <span>vscode</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="skill_L">
+                    <img src="../static/img/icon/heroku.svg" height="25px">
+                    <span>heroku</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="skill_L">
+                    <img src="../static/img/icon/firebase.svg" height="25px">
+                    <span>firebase</span>
+                  </div>
+                </li>
+              </ul>
             </li>
             <li>
               <span>Design tools</span>
-              <p>
-                Figma, Illustrator, Photoshop, After effects, Indesign, Premiere pro
-              </p>
+              <ul class="skills_cont mb_100 eng">
+                <li>
+                  <div class="skill_L">
+                    <img src="../static/img/icon/figma.png" height="20px">
+                    <span>figma</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="skill_L">
+                    <img src="../static/img/icon/ai.png" height="20px">
+                    <span>Illustrator</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="skill_L">
+                    <img src="../static/img/icon/ps.png" height="20px">
+                    <span>Photoshop</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="skill_L">
+                    <img src="../static/img/icon/ae.png" height="20px">
+                    <span>After effects</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="skill_L">
+                    <img src="../static/img/icon/id.png" height="20px">
+                    <span>Indesign</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="skill_L">
+                    <img src="../static/img/icon/pr.png" height="20px">
+                    <span>Premiere pro</span>
+                  </div>
+                </li>
+              </ul>
             </li>
             <li>
               <span>Document tools</span>
@@ -313,9 +296,9 @@ export default {
     imgFix : function(){
       const profile = document.getElementById('profile');
       const skills = document.getElementById('skills');
-      let skillsPosition = skills.getBoundingClientRect().top;
+      let skillsPosition = skills.getBoundingClientRect().top + 20;
       const scrolledTopLength = window.pageYOffset;
-      const absoluteTop = scrolledTopLength + skillsPosition - 100;
+      const absoluteTop = scrolledTopLength + skillsPosition;
       console.log(absoluteTop);
         if(scrolledTopLength > absoluteTop){
             profile.classList.add('end');
@@ -389,7 +372,7 @@ h1{
 
 .end.my_img{
   position: absolute;
-  top: 1170px;
+  top: 1298px;
 }
 
 .my_img img{
@@ -652,11 +635,27 @@ h1{
 }
 
 .skill_others li{
-  margin-bottom: 30px
+  margin-bottom: 30px;
+}
+
+.skill_others .skills_cont{
+  margin: 20px 0 30px;
+}
+
+.skill_others .skills_cont li{
+    margin-bottom: 20px;
+    margin-right: 30px;
+}
+
+
+.skill_others .skills_cont > li span {
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(30,57,180,60%)
 }
 
 .skill_others span{
-  font-size: 18px
+  font-size: 18px;
 }
 
 .skill_others p{
