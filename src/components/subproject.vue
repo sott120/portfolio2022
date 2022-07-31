@@ -144,6 +144,7 @@ export default {
   background-color: #1e39b4;
   padding-bottom: 400px;
   overflow: hidden;
+  scroll-margin: -400px
 }
 
 .sub_wrap{

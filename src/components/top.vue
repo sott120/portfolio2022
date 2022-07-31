@@ -1,13 +1,13 @@
 <template>
     <header>
-    <h1>SOYEON</h1>
+    <h1 @click="scrollNav(event,'about')">SOYEON</h1>
     <nav>
       <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li v-on:click="goContact"></li>
+        <li @click="scrollNav(event,'about')"></li>
+        <li @click="scrollNav(event,'main')"></li>
+        <li @click="scrollNav(event,'sub')"></li>
+        <li @click="scrollNav(event,'blog')"></li>
+        <li @click="scrollNav(event,'contact')"></li>
       </ul>
     </nav>
     </header>
@@ -17,8 +17,21 @@
 export default {
   name: 'intro-page',
   props: {
-    
-  }
+  },
+  data(){
+    return{
+      
+    }
+  },
+   methods: {
+     scrollNav(evt,secId){
+      const section = document.getElementById(secId);
+      if(section){
+        section.scrollIntoView({ behavior: 'smooth' })
+      }
+    }
+  },
+
 }
 </script>
 
@@ -36,13 +49,18 @@ header{
   justify-content: space-between;
   align-items: flex-end;
   z-index: 999;
-  
+  mix-blend-mode: difference;
 }
 h1{
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
   font-family: 'Montserrat', sans-serif;
   font-size: 34px;
   font-weight: 900;
   color: #1E39B4;
+  cursor: pointer;
 }
 nav ul{
   display: flex;

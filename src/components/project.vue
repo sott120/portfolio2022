@@ -1,5 +1,5 @@
 <template>
-  <div class="hello">
+  <div id="main" class="hello">
     <h1>project</h1>
     
   </div>
@@ -10,7 +10,7 @@ export default {
   name: 'project-page',
   props: {
   
-  }
+  },
 }
 </script>
 

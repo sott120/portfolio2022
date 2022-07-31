@@ -14,11 +14,11 @@
   <footer>
     <div class="ft_wrap">
       <ul>
-        <li>About me</li>
-        <li>Main project</li>
-        <li>Sub project</li>
-        <li>New post</li>
-        <li>Contact</li>
+        <li @click="scrollNav2(event,'about')">About me</li>
+        <li @click="scrollNav2(event,'main')">Main project</li>
+        <li @click="scrollNav2(event,'sub')">Sub project</li>
+        <li @click="scrollNav2(event,'blog')">New post</li>
+        <li @click="scrollNav2(event,'contact')">Contact</li>
       </ul>
       <div class="icon_wrap">
         <a href="https://github.com/sott120" target='_blank'>
@@ -41,7 +41,15 @@ export default {
   name: 'contact-page',
   props: {
   
-  }
+  },
+  methods: {
+     scrollNav2(evt,secId){
+      const section = document.getElementById(secId);
+      if(section){
+        section.scrollIntoView({ behavior: 'smooth' })
+      }
+    }
+  },
 }
 </script>
 
@@ -49,6 +57,7 @@ export default {
 <style scoped>
 .contact_wrap{
   text-align: center;
+  scroll-margin: -300px
 }
 
 h2{
