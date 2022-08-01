@@ -149,7 +149,6 @@ export default {
           el.classList.add('on');
       });
       let tabId = targetId.id;
-      console.log(tabId);
       switch (tabId) {
           case 'clone':
               type2.forEach(function (el) {
@@ -161,11 +160,6 @@ export default {
                   el.classList.remove('on');
               });
               break;
-          // default:
-          //     sbLi.forEach(function (el) {
-          //         el.classList.add('on');
-          //     });
-          //     break;
       }
     }
   }
@@ -265,7 +259,7 @@ em{
   height: 283px;
   margin: 10px;
   background-color: #fff;
-  transition: position .3s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 
 .tab_cont_li.on{
