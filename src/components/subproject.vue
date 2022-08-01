@@ -11,14 +11,14 @@
         <h1>WEB PUBLISHER &amp;&amp; WEB FRONT-END DEVELOPER</h1>
       </span>
       </div>
-      <h2 class="eng">SUB PROJECT</h2>
+      <h2 class="eng">Sub project</h2>
       <ul class="tab_ul eng">
-        <li class="tab_li active">All</li>
-        <li class="tab_li">Web clone</li>
-        <li class="tab_li">Toy project</li>
+        <li @click="subTab" id="all" class="tab_li active">All</li>
+        <li @click="subTab" id="clone" class="tab_li">Web clone</li>
+        <li @click="subTab" id="toy" class="tab_li">Toy project</li>
       </ul>
       <ul class="tab_cont_ul">
-        <li class="tab_cont_li">
+        <li class="tab_cont_li on type2">
           <img src="../static/img/sub/daejeon.jpg" alt="memo image">
           <div class="hov_txt">
             <span class="sub_title"><em>나만의 메모장</em></span>
@@ -32,7 +32,7 @@
             </div>
           </div>
         </li>
-        <li class="tab_cont_li">
+        <li class="tab_cont_li on type2">
           <img src="../static/img/sub/todo.jpg" alt="todo image">
           <div class="hov_txt">
             <span class="sub_title"><em>To do list</em></span>
@@ -46,7 +46,7 @@
             </div>
           </div>
         </li>
-        <li class="tab_cont_li">
+        <li class="tab_cont_li on type1">
           <img src="../static/img/sub/pollex.jpg" alt="pollex zone image">
           <div class="hov_txt">
             <span class="sub_title"><em>Pollex zone</em></span>
@@ -61,7 +61,7 @@
             </div>
           </div>
         </li>
-        <li class="tab_cont_li">
+        <li class="tab_cont_li on type1">
           <img src="../static/img/sub/daejeon.jpg" alt="memo image">
           <div class="hov_txt">
             <span class="sub_title"><em>대전문화재단</em></span>
@@ -76,7 +76,7 @@
             </div>
           </div>
         </li>
-        <li class="tab_cont_li">
+        <li class="tab_cont_li on type1">
           <img src="../static/img/sub/garden.jpg" alt="싱그러운집 image">
           <div class="hov_txt">
             <span class="sub_title"><em>싱그러운집</em></span>
@@ -91,7 +91,7 @@
             </div>
           </div>
         </li>
-        <li class="tab_cont_li">
+        <li class="tab_cont_li on type2">
           <img src="../static/img/sub/card2.jpg" alt="등록증만들기 image">
           <div class="hov_txt">
             <span class="sub_title"><em>나만의 등록증 만들기</em></span>
@@ -105,7 +105,7 @@
             </div>
           </div>
         </li>
-        <li class="tab_cont_li">
+        <li class="tab_cont_li on type2">
           <img src="../static/img/sub/rcp.jpg" alt="가위바위보 image">
           <div class="hov_txt">
             <span class="sub_title"><em>컴퓨터와 가위바위보</em></span>
@@ -119,7 +119,7 @@
             </div>
           </div>
         </li>
-        <li class="tab_cont_li smile">
+        <li class="tab_cont_li on type1 smile">
           <img src="../static/img/sub/smile.png" alt="빈공간 image">
         </li>
       </ul>
@@ -131,7 +131,43 @@
 export default {
   name: 'sub-page',
   props: {
-  
+  },
+  methods: {
+    subTab : function(e){
+      // 탭이름
+      const tabLi = document.querySelectorAll('.tab_li');
+      const type1 = document.querySelectorAll('.type1');
+      const type2 = document.querySelectorAll('.type2');
+      const contLi = document.querySelectorAll('.tab_cont_li');
+      tabLi[0].classList.remove('active');
+      tabLi[1].classList.remove('active');
+      tabLi[2].classList.remove('active');
+      const targetId = e.currentTarget;
+      targetId.classList.add('active');
+      // 탭컨텐츠
+      contLi.forEach(function (el) {
+          el.classList.add('on');
+      });
+      let tabId = targetId.id;
+      console.log(tabId);
+      switch (tabId) {
+          case 'clone':
+              type2.forEach(function (el) {
+                  el.classList.remove('on');
+              });
+              break;
+          case 'toy':
+              type1.forEach(function (el) {
+                  el.classList.remove('on');
+              });
+              break;
+          // default:
+          //     sbLi.forEach(function (el) {
+          //         el.classList.add('on');
+          //     });
+          //     break;
+      }
+    }
   }
 }
 </script>
@@ -165,7 +201,7 @@ export default {
   animation-timing-function: linear;
   -webkit-animation-name: Marquee;
   animation-name: Marquee;
-  animation-duration: 27.5682s;
+  animation-duration: 40s;
 }
 @-webkit-keyframes Marquee {
     from {-webkit-transform: translateX(0%);transform: translateX(0%);}
@@ -222,12 +258,18 @@ em{
 }
 
 .tab_cont_li {
+  display: none;
   position: relative;
   overflow: hidden;
   width: calc(25% - 20px);
   height: 283px;
   margin: 10px;
   background-color: #fff;
+  transition: position .3s ease-in-out;
+}
+
+.tab_cont_li.on{
+  display: block;
 }
 
 .tab_cont_li img{

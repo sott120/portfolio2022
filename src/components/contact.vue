@@ -11,6 +11,7 @@
       <h4 class="eng">psy_sott120@naver.com</h4>
     </article>
   </div>
+  <canvas id="canvas"></canvas>
   <footer>
     <div class="ft_wrap">
       <ul>
@@ -43,12 +44,13 @@ export default {
   
   },
   methods: {
-     scrollNav2(evt,secId){
+     scrollNav2: function(evt,secId){
       const section = document.getElementById(secId);
       if(section){
         section.scrollIntoView({ behavior: 'smooth' })
       }
-    }
+    },
+    
   },
 }
 </script>
@@ -87,7 +89,7 @@ h2{
 .cont_txt span{
   display: block;
   margin: auto;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
 }
 

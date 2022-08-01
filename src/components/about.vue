@@ -299,7 +299,6 @@ export default {
       let skillsPosition = skills.getBoundingClientRect().top + 20;
       const scrolledTopLength = window.pageYOffset;
       const absoluteTop = scrolledTopLength + skillsPosition;
-      console.log(absoluteTop);
         if(scrolledTopLength > absoluteTop){
             profile.classList.add('end');
         } else {
