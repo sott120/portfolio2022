@@ -363,7 +363,7 @@ h1{
   max-width: 710px;
   width: 100%;
   height: 500px;
-  background-color: beige;
+  background-color: #1E39B4;
   position: fixed;
   top: 300px;
   overflow: hidden;
