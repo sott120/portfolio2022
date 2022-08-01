@@ -35,7 +35,7 @@
           </li>
           <li>
             <img src="../static/img/icon/firebase.svg" alt="O" height="30px">
-            <span>Firebase.js</span>
+            <span>Firebase</span>
           </li>
         </ul>
         <table class="sub_txt">
@@ -59,6 +59,69 @@
       </div>
     </article>
     <div class="mb_400"></div>
+    <article class="prj_wrap ddu">
+      <div class="prj_desc">
+        <ul class="round_txt">
+          <li>Team</li>
+          <li>full stack</li>
+          <li>design</li>
+          <li>deploy</li>
+        </ul>
+        <h3>뚜레쥬르</h3>
+        <p class="prj_txt">
+          뚜레쥬르 사이트 리뉴얼을 팀(3명)작업으로 진행하였습니다.<br>
+          소개페이지, 공지사항 관련 페이지, 회원가입페이지를 제작하였고, 게시판 관련 DB연동을 담당하였습니다.
+        </p>
+        <ul class="stack">
+          <li>
+            <img src="../static/img/icon/html.svg" alt="O" height="30px">
+            <span>HTML</span>
+          </li>
+          <li>
+            <img src="../static/img/icon/css.svg" alt="O" height="30px">
+            <span>CSS</span>
+          </li>
+          <li>
+            <img src="../static/img/icon/javascript.svg" alt="O" height="30px">
+            <span>JS</span>
+          </li>
+          <li>
+            <img src="../static/img/icon/nodejs.svg" alt="O" height="30px">
+            <span>Node.js</span>
+          </li>
+          <li>
+            <img src="../static/img/icon/database.svg" alt="O" height="30px">
+            <span>MySQL</span>
+          </li>
+          <li>
+            <img src="../static/img/icon/heroku.svg" alt="O" height="30px">
+            <span>heroku</span>
+          </li>
+        </ul>
+        <table class="sub_txt">
+          <tr>
+            <td>작업기간 : </td>
+            <td>2022.05 ~ 2022.06</td>
+          </tr>
+          <tr>
+            <td>담당업무  :  </td>
+            <td>디자인, 마크업, 반응형, 스크립트 적용, db연동, 공지사항 게시판 CRUD, 페이징, 검색기능 구현</td>
+          </tr>
+        </table>
+        <div class="btns_wrap">
+          <a class="eng btn_site">
+            Go to site
+          </a>
+          <a class="eng btn_github">
+            Git hub 
+          </a>
+        </div>
+      </div>
+      <div class="mockup_img">
+        <img src="../static/img/main/ddu.png" alt="">
+      </div>
+    </article> 
+    <div class="mb_400"></div>
     <article class="prj_wrap">
       <div class="prj_desc">
         <ul class="round_txt">
@@ -70,7 +133,7 @@
         <h3>서문시장 야시장</h3>
         <p class="prj_txt">
           서문시장 야시장 사이트를 리뉴얼한 개인프로젝트입니다.<br>
-          첫 프로젝트여서 미숙하지만 스크립트 추가, 카카오 로그인과 게시판 기능까지 구현하였습니다.
+          첫 프로젝트여서 미숙하지만 스크립트, 카카오 로그인과 게시판 기능을 구현하였습니다.
         </p>
         <ul class="stack">
           <li>
@@ -121,7 +184,7 @@
         <img src="../static/img/main/seomun.png" alt="">
       </div>
     </article> 
-    <div class=""></div>
+    <div class="mb_400"></div>
   </div>
 </template>
 
@@ -149,11 +212,23 @@ h2{
 
 .prj_wrap{
   display: flex;
+  justify-content: space-between;
+}
+
+.prj_wrap.ddu .prj_desc{
+  order: 2;
+  padding-right: 0;
+  padding-left: 80px;
+}
+
+.prj_wrap.ddu .mockup_img{
+  order: 1;
 }
 
 .prj_desc{
-  flex: 4;
-  padding: 50px 0;
+  flex: 3;
+  padding: 30px 0;
+  padding-right: 80px;
   box-sizing: border-box;
 }
 
@@ -182,7 +257,8 @@ h3{
 
 .stack{
   display: flex;
-  margin-bottom: 60px;
+  flex-wrap: wrap;
+  margin-bottom: 28px
 }
 
 .stack li{
@@ -191,10 +267,16 @@ h3{
   font-size: 18px;
   font-weight: 700;
   margin-right: 10px;
+  margin-bottom: 10px;
 }
 
 .sub_txt{
   margin-bottom: 50px;
+}
+
+.sub_txt td:first-child{
+  white-space: nowrap;
+  padding-right: 10px;
 }
 
 .btns_wrap{
@@ -256,9 +338,8 @@ h3{
 
 .mockup_img img{
   width: 100%;
-  padding: 20px;
   box-sizing: border-box;
-  border: 20px solid #ececec;
+  border: 20px solid #f1f1f1;
   border-radius: 10px;
 }
 
@@ -272,6 +353,7 @@ h3{
   left: 50%;
   margin-left: -266px;
   background: url(../static/img/main/imacmoc.png) no-repeat center center;
+  background-size: auto 100%;
 }
 
 </style>
