@@ -41,14 +41,19 @@
     </li>
   </ul>
   </div>
-  
+  <button @click="test">나와라</button>
 </template>
 
 <script>
+import axios from 'axios';
 export default {
   name: 'blog-page',
   props: {
-  
+  },
+  methods:{
+    test: function(){
+      axios.post("http://localhost:1234/tistory").then(res => {console.log(res.data)}) 
+    }
   }
 }
 </script>
