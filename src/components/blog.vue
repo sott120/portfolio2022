@@ -2,8 +2,8 @@
   <div id="blog" class="blog_wrap">
     <h2 class="eng">New post</h2>
     <p class="gotoblog eng"><a href="https://sott120.tistory.com/" target="_blank">Go to blog</a></p>
-    <ul class="crolling_ul">
-    <li class="crolling_li">
+    <ul class="crawling_ul">
+    <li class="crawling_li">
       <img src="../static/img/sub/card.jpg" alt="썸네일 주소">
       <div class="blog_txt">
         <a href="">
@@ -12,7 +12,7 @@
         </a>
       </div>
     </li>
-    <li class="crolling_li">
+    <li class="crawling_li">
       <img src="../static/img/sub/card.jpg" alt="썸네일 주소">
       <div class="blog_txt">
         <a href="">
@@ -21,7 +21,7 @@
         </a>
       </div>
     </li>
-    <li class="crolling_li">
+    <li class="crawling_li">
       <img src="../static/img/sub/card.jpg" alt="썸네일 주소">
       <div class="blog_txt">
         <a href="">
@@ -30,7 +30,7 @@
         </a>
       </div>
     </li>
-    <li class="crolling_li">
+    <li class="crawling_li">
       <img src="../static/img/sub/card.jpg" alt="썸네일 주소">
       <div class="blog_txt">
         <a href="">
@@ -83,13 +83,13 @@ h2{
     color: #1E39B4;
 }
 
-.crolling_li{
+.crawling_li{
   border: 2px solid #1E39B4;
   display: flex;
   margin-bottom: 30px;
 }
 
-.crolling_li img{
+.crawling_li img{
   object-fit: cover;
   width: 223px;
   height: 120px;
