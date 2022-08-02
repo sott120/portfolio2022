@@ -7,8 +7,8 @@
       <img src="../static/img/sub/card.jpg" alt="썸네일 주소">
       <div class="blog_txt">
         <a href="">
-          <h4>포스팅 제목입니다.</h4>
-          <p>2022.07.11</p>
+          <h4>JS 1일차 - 데이터 입력받고 출력하기, 변수선언(prompt, alert, console.log / let, var, const)</h4>
+          <p>2022. 6. 7. 20:53</p>
         </a>
       </div>
     </li>
@@ -16,8 +16,8 @@
       <img src="../static/img/sub/card.jpg" alt="썸네일 주소">
       <div class="blog_txt">
         <a href="">
-          <h4>포스팅 제목입니다.</h4>
-          <p>2022.07.11</p>
+          <h4>Node express로 서버열고 express-ejs-layouts 사용하기</h4>
+          <p>2022. 5. 15. 16:03</p>
         </a>
       </div>
     </li>
@@ -25,8 +25,8 @@
       <img src="../static/img/sub/card.jpg" alt="썸네일 주소">
       <div class="blog_txt">
         <a href="">
-          <h4>포스팅 제목입니다.</h4>
-          <p>2022.07.11</p>
+          <h4>node.js 로 웹서버 만들기 (+ node express)</h4>
+          <p>2022. 5. 8. 22:11</p>
         </a>
       </div>
     </li>
@@ -34,8 +34,8 @@
       <img src="../static/img/sub/card.jpg" alt="썸네일 주소">
       <div class="blog_txt">
         <a href="">
-          <h4>포스팅 제목입니다.</h4>
-          <p>2022.07.11</p>
+          <h4>css로 한줄/ 여러줄 말줄임표 만들기</h4>
+          <p>2022. 5. 1. 23:59</p>
         </a>
       </div>
     </li>
@@ -106,6 +106,9 @@ h2{
   font-weight: 700;
   padding-bottom: 10px;
   color: #1E39B4;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .blog_txt p{
