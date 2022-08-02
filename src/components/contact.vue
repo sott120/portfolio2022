@@ -23,10 +23,10 @@
       </ul>
       <div class="icon_wrap">
         <a href="https://github.com/sott120" target='_blank'>
-          <img src="../static/img/icon/github_white.svg">
+          <img src="../static/img/icon/github_white.svg" alt="깃허브 아이콘">
         </a>
         <a href="https://sott120.tistory.com/" target="_blank">
-          <img src="../static/img/icon/tistory.svg">
+          <img src="../static/img/icon/tistory.svg" alt="티스토리 아이콘">
         </a>
       </div>  
       <p>

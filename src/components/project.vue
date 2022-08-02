@@ -5,7 +5,7 @@
       <div class="prj_desc">
         <ul class="round_txt">
           <li>web crolling</li>
-          <li>animation</li>
+          <li>tweenmax</li>
         </ul>
         <h3>2022 Portfolio</h3>
         <p class="prj_txt">
@@ -14,27 +14,27 @@
         </p>
         <ul class="stack">
           <li>
-            <img src="../static/img/icon/html.svg" alt="O" height="30px">
+            <img src="../static/img/icon/html.svg" alt="html icon" height="30px">
             <span>HTML</span>
           </li>
           <li>
-            <img src="../static/img/icon/css.svg" alt="O" height="30px">
+            <img src="../static/img/icon/css.svg" alt="css icon" height="30px">
             <span>CSS</span>
           </li>
           <li>
-            <img src="../static/img/icon/javascript.svg" alt="O" height="30px">
+            <img src="../static/img/icon/javascript.svg" alt="js icon" height="30px">
             <span>JS</span>
           </li>
           <li>
-            <img src="../static/img/icon/nodejs.svg" alt="O" height="30px">
+            <img src="../static/img/icon/nodejs.svg" alt="node icon" height="30px">
             <span>Node.js</span>
           </li>
           <li>
-            <img src="../static/img/icon/vue.svg" alt="O" height="30px">
+            <img src="../static/img/icon/vue.svg" alt="vue icon" height="30px">
             <span>Vue.js</span>
           </li>
           <li>
-            <img src="../static/img/icon/firebase.svg" alt="O" height="30px">
+            <img src="../static/img/icon/firebase.svg" alt="firebase icon" height="30px">
             <span>Firebase</span>
           </li>
         </ul>
@@ -49,13 +49,13 @@
           </tr>
         </table>
         <div class="btns_wrap">
-          <a class="eng btn_github">
+          <a href="https://github.com/sott120/portfolio2022" target="_blank" class="eng btn_github">
             Git hub 
           </a>
         </div>
       </div>
       <div class="mockup_img">
-        <img src="../static/img/main/portfolio.png" alt="">
+        <img src="../static/img/main/portfolio.png" alt="portfolio project image">
       </div>
     </article>
     <div class="mb_400"></div>
@@ -74,27 +74,27 @@
         </p>
         <ul class="stack">
           <li>
-            <img src="../static/img/icon/html.svg" alt="O" height="30px">
+            <img src="../static/img/icon/html.svg" alt="html icon" height="30px">
             <span>HTML</span>
           </li>
           <li>
-            <img src="../static/img/icon/css.svg" alt="O" height="30px">
+            <img src="../static/img/icon/css.svg" alt="css icon" height="30px">
             <span>CSS</span>
           </li>
           <li>
-            <img src="../static/img/icon/javascript.svg" alt="O" height="30px">
+            <img src="../static/img/icon/javascript.svg" alt="javascript icon" height="30px">
             <span>JS</span>
           </li>
           <li>
-            <img src="../static/img/icon/nodejs.svg" alt="O" height="30px">
+            <img src="../static/img/icon/nodejs.svg" alt="nodejs icon" height="30px">
             <span>Node.js</span>
           </li>
           <li>
-            <img src="../static/img/icon/database.svg" alt="O" height="30px">
+            <img src="../static/img/icon/database.svg" alt="mysql icon" height="30px">
             <span>MySQL</span>
           </li>
           <li>
-            <img src="../static/img/icon/heroku.svg" alt="O" height="30px">
+            <img src="../static/img/icon/heroku.svg" alt="heroku icon" height="27px">
             <span>heroku</span>
           </li>
         </ul>
@@ -109,16 +109,16 @@
           </tr>
         </table>
         <div class="btns_wrap">
-          <a class="eng btn_site">
+          <a href="https://teambread.herokuapp.com/" target="_blank" class="eng btn_site">
             Go to site
           </a>
-          <a class="eng btn_github">
+          <a href="https://github.com/sott120/tous-les-jours-node" target="_blank" class="eng btn_github">
             Git hub 
           </a>
         </div>
       </div>
       <div class="mockup_img">
-        <img src="../static/img/main/ddu.png" alt="">
+        <img src="../static/img/main/ddu.png" alt="뚜레쥬르 프로젝트 이미지">
       </div>
     </article> 
     <div class="mb_400"></div>
@@ -137,27 +137,27 @@
         </p>
         <ul class="stack">
           <li>
-            <img src="../static/img/icon/html.svg" alt="O" height="30px">
+            <img src="../static/img/icon/html.svg" alt="html icon" height="30px">
             <span>HTML</span>
           </li>
           <li>
-            <img src="../static/img/icon/css.svg" alt="O" height="30px">
+            <img src="../static/img/icon/css.svg" alt="css icon" height="30px">
             <span>CSS</span>
           </li>
           <li>
-            <img src="../static/img/icon/javascript.svg" alt="O" height="30px">
+            <img src="../static/img/icon/javascript.svg" alt="javascript icon" height="30px">
             <span>JS</span>
           </li>
           <li>
-            <img src="../static/img/icon/nodejs.svg" alt="O" height="30px">
+            <img src="../static/img/icon/nodejs.svg" alt="nodejs icon" height="30px">
             <span>Node.js</span>
           </li>
           <li>
-            <img src="../static/img/icon/database.svg" alt="O" height="30px">
+            <img src="../static/img/icon/database.svg" alt="mysql icon" height="30px">
             <span>MySQL</span>
           </li>
           <li>
-            <img src="../static/img/icon/heroku.svg" alt="O" height="30px">
+            <img src="../static/img/icon/heroku.svg" alt="heroku icon" height="27px">
             <span>heroku</span>
           </li>
         </ul>
@@ -172,16 +172,16 @@
           </tr>
         </table>
         <div class="btns_wrap">
-          <a class="eng btn_site">
+          <a href="https://seomun2022.herokuapp.com/" target="_blank" class="eng btn_site">
             Go to site
           </a>
-          <a class="eng btn_github">
+          <a href="https://github.com/sott120/seomun_node" target="_blank" class="eng btn_github">
             Git hub 
           </a>
         </div>
       </div>
       <div class="mockup_img">
-        <img src="../static/img/main/seomun.png" alt="">
+        <img src="../static/img/main/seomun.png" alt="서문시장 프로젝트 이미지">
       </div>
     </article> 
     <div class="mb_400"></div>

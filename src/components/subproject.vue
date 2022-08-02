@@ -55,9 +55,9 @@
               폴렉스존 웹사이트 클론코딩입니다.
             </span>
             <div class="hov_btn_wrap clone">
-              <div class="go_site"><a href="">Main</a></div>
-              <div class="go_sub small"><a href="">Sub</a></div>
-              <div class="go_github small"><a href="">Git</a></div>
+              <div class="go_site"><a href="https://sott120.github.io/pollex-zone/" target="_blank">Main</a></div>
+              <div class="go_sub small"><a href="https://sott120.github.io/pollex-zone/sub/intro.html" target="_blank">Sub</a></div>
+              <div class="go_github small"><a href="https://github.com/sott120/pollex-zone" target="_blank">Git</a></div>
             </div>
           </div>
         </li>
@@ -70,9 +70,9 @@
               대전문화재단 웹사이트 클론코딩입니다.
             </span>
             <div class="hov_btn_wrap clone">
-              <div class="go_site"><a href="">Main</a></div>
-              <div class="go_sub small"><a href="">Sub</a></div>
-              <div class="go_github small"><a href="">Git</a></div>
+              <div class="go_site"><a href="https://sott120.github.io/Daejeon-culture-foundation/" target="_blank">Main</a></div>
+              <div class="go_sub small"><a href="https://sott120.github.io/Daejeon-culture-foundation/sub/sub.html" target="_blank">Sub</a></div>
+              <div class="go_github small"><a href="https://github.com/sott120/Daejeon-culture-foundation" target="_blank">Git</a></div>
             </div>
           </div>
         </li>
@@ -85,9 +85,9 @@
               싱그러운집 웹사이트 클론코딩입니다.
             </span>
             <div class="hov_btn_wrap clone">
-              <div class="go_site"><a href="">Main</a></div>
-              <div class="go_sub small"><a href="">Sub</a></div>
-              <div class="go_github small"><a href="">Git</a></div>
+              <div class="go_site"><a href="https://sott120.github.io/s-house-garden/" target="_blank">Main</a></div>
+              <div class="go_sub small"><a href="https://sott120.github.io/s-house-garden/sub/community.html" target="_blank">Sub</a></div>
+              <div class="go_github small"><a href="https://github.com/sott120/s-house-garden" target="_blank">Git</a></div>
             </div>
           </div>
         </li>
@@ -100,8 +100,8 @@
               나만의 등록증을 만들고 jpg파일로 저장할 수 있는 사이트입니다.
             </span>
             <div class="hov_btn_wrap">
-              <div class="go_site"><a href="">Go to site</a></div>
-              <div class="go_github"><a href="">Go github</a></div>
+              <div class="go_site"><a href="https://sott120.github.io/card/" target="_blank">Go to site</a></div>
+              <div class="go_github"><a href="https://github.com/sott120/card" target="_blank">Go github</a></div>
             </div>
           </div>
         </li>
@@ -114,8 +114,8 @@
               컴퓨터와 가위바위보 게임을 할 수 있는 사이트입니다.
             </span>
             <div class="hov_btn_wrap">
-              <div class="go_site"><a href="">Go to site</a></div>
-              <div class="go_github"><a href="">Go github</a></div>
+              <div class="go_site"><a href="https://sott120.github.io/RPS/" target="_blank">Go to site</a></div>
+              <div class="go_github"><a href="https://github.com/sott120/RPS" target="_blank">Go github</a></div>
             </div>
           </div>
         </li>

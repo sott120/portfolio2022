@@ -2,12 +2,14 @@
   <div id="about" class="about_wrap">
     <div class="about_title">
       <section class="left_side">  
-        <svg style="enable-background:new 0 0 706.5 207.4;">
+        <svg id="aboutSvg" style="enable-background:new 0 0 706.5 207.4;">
             <text x="5px" y="207px"  >ABOUT</text>
         </svg>
       </section>
       <section class="right_side">  
-        <h1>ME.</h1>
+        <div class="iam_wrap">
+          <h1 id="iam" class="me">ME.</h1>
+        </div>
         <article  v-show="modal == true"  class="info_modal">
           <div class="inner">
             <div @click="[modal = false, noScroll()]" class="close">
@@ -128,7 +130,7 @@
         </article>
         <article class="iam ml_122">
           <div class="title eng mb_80">
-            <h2>I am</h2>
+              <h2>I am</h2>
             <span @click="[modal = true, noScroll()]">more info</span>
           </div>
           <div class="iam_cont mt_80">
@@ -266,7 +268,7 @@
       </section>  
     </div>
     <div id="profile" class="my_img">
-      <img src="../static/img/profile_blue.jpg" alt="">
+      <img src="../static/img/profile_blue.jpg" alt="프로필사진">
     </div>
   </div>
 </template>
@@ -296,13 +298,20 @@ export default {
     imgFix : function(){
       const profile = document.getElementById('profile');
       const skills = document.getElementById('skills');
-      let skillsPosition = skills.getBoundingClientRect().top + 20;
+      const aboutSvg = document.getElementById('aboutSvg');
+      const aboutiam = document.getElementById('iam');
+
+      let skillsPosition = skills.getBoundingClientRect().top + 10;
       const scrolledTopLength = window.pageYOffset;
       const absoluteTop = scrolledTopLength + skillsPosition;
         if(scrolledTopLength > absoluteTop){
-            profile.classList.add('end');
+            profile.classList.add('end')
+            aboutSvg.classList.add('end')
+            aboutiam.classList.add('end')
         } else {
-          profile.classList.remove('end');
+          profile.classList.remove('end')
+          aboutSvg.classList.remove('end')
+          aboutiam.classList.remove('end')
         }
     },
   },
@@ -334,9 +343,16 @@ export default {
 }
 
 .about_title svg{
+  max-width: 1440px;
   width : 100%;
-  height: 100%;
-  position : relative;
+  height: 225px;
+  position : fixed;
+  top: 50px;
+}
+
+.about_title svg.end{
+  position: absolute;
+  top: 1092px;
 }
 
 text {
@@ -351,12 +367,25 @@ text {
     font-weight: 700;
 }
 
-h1{
+.iam_wrap{
+    position: relative;
+    width: 100%;
+    height: 225px;
+}
+
+.me{
   font-family: 'Montserrat';
   font-size: 187px;
   font-weight: 700;
   color: #1E39B4;
   margin-left: 122px;
+  position: fixed;
+  top: 52px;
+}
+
+.me.end{
+  position: absolute;
+  top: 1013px;
 }
 
 .my_img{
@@ -371,7 +400,7 @@ h1{
 
 .end.my_img{
   position: absolute;
-  top: 1298px;
+  top: 1340px;
 }
 
 .my_img img{
@@ -532,7 +561,7 @@ h1{
 /* 모달 끝 */
 
 .iam{
-  margin-top: 50px;
+  margin-top: 150px;
   margin-bottom: 340px;
 }
 

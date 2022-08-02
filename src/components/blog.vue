@@ -4,7 +4,7 @@
     <p class="gotoblog eng"><a href="https://sott120.tistory.com/" target="_blank">Go to blog</a></p>
     <ul class="crawling_ul">
     <li class="crawling_li">
-      <img src="../static/img/sub/card.jpg" alt="썸네일 주소">
+      <img src="../static/img/sub/card.jpg" alt="썸네일 이미지">
       <div class="blog_txt">
         <a href="">
           <h4>JS 1일차 - 데이터 입력받고 출력하기, 변수선언(prompt, alert, console.log / let, var, const)</h4>
@@ -13,7 +13,7 @@
       </div>
     </li>
     <li class="crawling_li">
-      <img src="../static/img/sub/card.jpg" alt="썸네일 주소">
+      <img src="../static/img/sub/card.jpg" alt="썸네일 이미지">
       <div class="blog_txt">
         <a href="">
           <h4>Node express로 서버열고 express-ejs-layouts 사용하기</h4>
@@ -22,7 +22,7 @@
       </div>
     </li>
     <li class="crawling_li">
-      <img src="../static/img/sub/card.jpg" alt="썸네일 주소">
+      <img src="../static/img/sub/card.jpg" alt="썸네일 이미지">
       <div class="blog_txt">
         <a href="">
           <h4>node.js 로 웹서버 만들기 (+ node express)</h4>
@@ -31,7 +31,7 @@
       </div>
     </li>
     <li class="crawling_li">
-      <img src="../static/img/sub/card.jpg" alt="썸네일 주소">
+      <img src="../static/img/sub/card.jpg" alt="썸네일 이미지">
       <div class="blog_txt">
         <a href="">
           <h4>css로 한줄/ 여러줄 말줄임표 만들기</h4>
