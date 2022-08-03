@@ -10,7 +10,7 @@
         <div class="iam_wrap">
           <h1 id="iam" class="me">ME.</h1>
         </div>
-        <article  v-show="modal == true"  class="info_modal">
+        <article  v-show="modal == true" class="info_modal">
           <div class="inner">
             <div @click="[modal = false, noScroll()]" class="close">
               <div class="close_l"></div>
@@ -142,128 +142,132 @@
           </div>
         </article>
         <article id="skills" class="skills ml_122">
-          <div class="title eng mb_80">
-            <h2>Skills</h2>
+          <div class="main_skill">
+            <div class="title eng mb_80">
+              <h2>Skills</h2>
+            </div>
+            <ul class="skills_cont mb_100 eng">
+                <li>
+                  <div class="skill_L">
+                    <img src="../static/img/icon/html.svg" height="33px">
+                    <span>HTML5</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="skill_L">
+                    <img src="../static/img/icon/css.svg" height="30px">
+                    <span>CSS3</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="skill_L">
+                    <img src="../static/img/icon/javascript.svg" height="30px">
+                    <span>javascript</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="skill_L">
+                    <img src="../static/img/icon/vue.svg" height="30px">
+                    <span>Vue.js</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="skill_L">
+                    <img src="../static/img/icon/nodejs.svg" height="30px">
+                    <span>Node.js</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="skill_L">
+                    <img src="../static/img/icon/database.svg" height="30px">
+                    <span>MySQL</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="skill_L">
+                    <img src="../static/img/icon/git.svg" height="30px">
+                    <span>Git</span>
+                  </div>
+                </li>
+            </ul>
           </div>
-          <ul class="skills_cont mb_100 eng">
+          <div class="other_skill">  
+            <div class="title eng mb_80">
+              <h2>Others</h2>
+            </div>
+            <ul class="skill_others eng">
               <li>
-                <div class="skill_L">
-                  <img src="../static/img/icon/html.svg" height="33px">
-                  <span>HTML5</span>
-                </div>
+                <span>Develop tools</span>
+                <ul class="skills_cont mb_100 eng">
+                  <li>
+                    <div class="skill_L">
+                      <img src="../static/img/icon/vscode.png" height="20px">
+                      <span>vscode</span>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="skill_L">
+                      <img src="../static/img/icon/heroku.svg" height="25px">
+                      <span>heroku</span>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="skill_L">
+                      <img src="../static/img/icon/firebase.svg" height="25px">
+                      <span>firebase</span>
+                    </div>
+                  </li>
+                </ul>
               </li>
               <li>
-                <div class="skill_L">
-                  <img src="../static/img/icon/css.svg" height="30px">
-                  <span>CSS3</span>
-                </div>
+                <span>Design tools</span>
+                <ul class="skills_cont mb_100 eng">
+                  <li>
+                    <div class="skill_L">
+                      <img src="../static/img/icon/figma.png" height="20px">
+                      <span>figma</span>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="skill_L">
+                      <img src="../static/img/icon/ai.png" height="20px">
+                      <span>Illustrator</span>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="skill_L">
+                      <img src="../static/img/icon/ps.png" height="20px">
+                      <span>Photoshop</span>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="skill_L">
+                      <img src="../static/img/icon/ae.png" height="20px">
+                      <span>After effects</span>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="skill_L">
+                      <img src="../static/img/icon/id.png" height="20px">
+                      <span>Indesign</span>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="skill_L">
+                      <img src="../static/img/icon/pr.png" height="20px">
+                      <span>Premiere pro</span>
+                    </div>
+                  </li>
+                </ul>
               </li>
               <li>
-                <div class="skill_L">
-                  <img src="../static/img/icon/javascript.svg" height="30px">
-                  <span>javascript</span>
-                </div>
+                <span>Document tools</span>
+                <p>
+                  Power point, 한글, word, Excel
+                </p>
               </li>
-              <li>
-                <div class="skill_L">
-                  <img src="../static/img/icon/vue.svg" height="30px">
-                  <span>Vue.js</span>
-                </div>
-              </li>
-              <li>
-                <div class="skill_L">
-                  <img src="../static/img/icon/nodejs.svg" height="30px">
-                  <span>Node.js</span>
-                </div>
-              </li>
-              <li>
-                <div class="skill_L">
-                  <img src="../static/img/icon/database.svg" height="30px">
-                  <span>MySQL</span>
-                </div>
-              </li>
-              <li>
-                <div class="skill_L">
-                  <img src="../static/img/icon/git.svg" height="30px">
-                  <span>Git</span>
-                </div>
-              </li>
-          </ul>
-          <div class="title eng mb_80">
-            <h2>Others</h2>
-          </div>
-          <ul class="skill_others eng">
-            <li>
-              <span>Develop tools</span>
-              <ul class="skills_cont mb_100 eng">
-                <li>
-                  <div class="skill_L">
-                    <img src="../static/img/icon/vscode.png" height="20px">
-                    <span>vscode</span>
-                  </div>
-                </li>
-                <li>
-                  <div class="skill_L">
-                    <img src="../static/img/icon/heroku.svg" height="25px">
-                    <span>heroku</span>
-                  </div>
-                </li>
-                <li>
-                  <div class="skill_L">
-                    <img src="../static/img/icon/firebase.svg" height="25px">
-                    <span>firebase</span>
-                  </div>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <span>Design tools</span>
-              <ul class="skills_cont mb_100 eng">
-                <li>
-                  <div class="skill_L">
-                    <img src="../static/img/icon/figma.png" height="20px">
-                    <span>figma</span>
-                  </div>
-                </li>
-                <li>
-                  <div class="skill_L">
-                    <img src="../static/img/icon/ai.png" height="20px">
-                    <span>Illustrator</span>
-                  </div>
-                </li>
-                <li>
-                  <div class="skill_L">
-                    <img src="../static/img/icon/ps.png" height="20px">
-                    <span>Photoshop</span>
-                  </div>
-                </li>
-                <li>
-                  <div class="skill_L">
-                    <img src="../static/img/icon/ae.png" height="20px">
-                    <span>After effects</span>
-                  </div>
-                </li>
-                <li>
-                  <div class="skill_L">
-                    <img src="../static/img/icon/id.png" height="20px">
-                    <span>Indesign</span>
-                  </div>
-                </li>
-                <li>
-                  <div class="skill_L">
-                    <img src="../static/img/icon/pr.png" height="20px">
-                    <span>Premiere pro</span>
-                  </div>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <span>Document tools</span>
-              <p>
-                Power point, 한글, word, Excel
-              </p>
-            </li>
-          </ul>
+            </ul>
+          </div>  
         </article>
       </section>  
     </div>
@@ -274,9 +278,15 @@
 </template>
 
 <script>
+import gsap from 'gsap'
+import ScrollTrigger from 'gsap/ScrollTrigger'
 export default {
   name: 'about-page',
   props: {
+  },
+  mounted: function() {
+    this.scrollAnimation1();
+    this.scrollAnimation2();
   },
   data(){
     return{
@@ -314,8 +324,31 @@ export default {
           aboutiam.classList.remove('end')
         }
     },
+    scrollAnimation1 : function() {
+      gsap.registerPlugin(ScrollTrigger);
+      gsap.timeline({
+      scrollTrigger: {
+        trigger: ".iam",
+        start: "center center",
+        end: "top top",
+        scrub: true,
+      }
+    })
+    .from(".iam", { opacity: 1 })
+    },
+    scrollAnimation2 : function() {
+      gsap.registerPlugin(ScrollTrigger);
+      gsap.timeline({
+      scrollTrigger: {
+        trigger: ".main_skill",
+        start: "center center",
+        end: "top top",
+        scrub: true,
+      }
+    })
+    .from(".main_skill", { opacity: 1 })
+    },
   },
-  
 }
 </script>
 
@@ -563,6 +596,11 @@ text {
 .iam{
   margin-top: 150px;
   margin-bottom: 340px;
+  opacity: 0;
+}
+
+.main_skill{
+  opacity: 0;
 }
 
 .title{
