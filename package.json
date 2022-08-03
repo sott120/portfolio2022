@@ -15,7 +15,6 @@
     "express": "^4.18.1",
     "gsap": "^3.10.4",
     "vue": "^3.2.13",
-    "vue-scrollmagic": "^1.2.0",
     "vue-smooth-scrollbar": "^1.0.3"
   },
   "devDependencies": {
