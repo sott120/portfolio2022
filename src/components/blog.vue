@@ -1,47 +1,19 @@
 <template>
   <div id="blog" class="blog_wrap">
-    <h2 class="eng">New post</h2>
+    <h2 class="eng">Blog posting</h2>
     <p class="gotoblog eng"><a href="https://sott120.tistory.com/" target="_blank">Go to blog</a></p>
     <ul class="crawling_ul">
-    <li class="crawling_li">
-      <img src="../static/img/sub/card.jpg" alt="썸네일 이미지">
-      <div class="blog_txt">
-        <a href="">
-          <h4>JS 1일차 - 데이터 입력받고 출력하기, 변수선언(prompt, alert, console.log / let, var, const)</h4>
-          <p>2022. 6. 7. 20:53</p>
-        </a>
-      </div>
-    </li>
-    <li class="crawling_li">
-      <img src="../static/img/sub/card.jpg" alt="썸네일 이미지">
-      <div class="blog_txt">
-        <a href="">
-          <h4>Node express로 서버열고 express-ejs-layouts 사용하기</h4>
-          <p>2022. 5. 15. 16:03</p>
-        </a>
-      </div>
-    </li>
-    <li class="crawling_li">
-      <img src="../static/img/sub/card.jpg" alt="썸네일 이미지">
-      <div class="blog_txt">
-        <a href="">
-          <h4>node.js 로 웹서버 만들기 (+ node express)</h4>
-          <p>2022. 5. 8. 22:11</p>
-        </a>
-      </div>
-    </li>
-    <li class="crawling_li">
-      <img src="../static/img/sub/card.jpg" alt="썸네일 이미지">
-      <div class="blog_txt">
-        <a href="">
-          <h4>css로 한줄/ 여러줄 말줄임표 만들기</h4>
-          <p>2022. 5. 1. 23:59</p>
-        </a>
-      </div>
+    <li v-for="(item, index) in datas" v-bind:key="index.list" class="crawling_li">
+      <a :href="item.link">
+        <img :src="item.img" alt="썸네일 이미지">
+        <div class="blog_txt">
+          <h4>{{ item.title }}</h4>
+          <p>{{ item.date }}</p>
+        </div>
+      </a>
     </li>
   </ul>
   </div>
-  <button @click="test">나와라</button>
 </template>
 
 <script>
@@ -50,9 +22,23 @@ export default {
   name: 'blog-page',
   props: {
   },
+  data(){
+    return{
+      datas: [],
+      cutdatas:[],
+    }
+  },
+  created: function () {
+    window.addEventListener('load', this.crawlingData);
+  },
   methods:{
-    test: function(){
-      axios.post("http://localhost:1234/tistory").then(res => {console.log(res.data)}) 
+    crawlingData: async function(){
+      this.datas= await axios.post("http://localhost:1234/tistory").then(res => {
+        return res.data
+      })
+    },
+    cutData: async function(){
+      this.cutdatas = await this.datas.slice( 1, 3 ); 
     }
   }
 }
@@ -88,7 +74,8 @@ h2{
     color: #1E39B4;
 }
 
-.crawling_li{
+.crawling_li > a{
+  display: block;
   border: 2px solid #1E39B4;
   display: flex;
   margin-bottom: 30px;

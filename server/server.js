@@ -16,6 +16,7 @@ app.listen("1234", () => {
 app.post("/tistory", async (req, res) => {
   const html = await axios.get("https://sott120.tistory.com/");
   const $ = cheerio.load(html.data);
+  //제목 불러오기
   const title = $(
     "#main > div > div > ul > li > div > div.box_contents > a.link_title > strong"
   );
@@ -25,7 +26,8 @@ app.post("/tistory", async (req, res) => {
        title: $(el).text(),
     };
   });
-  
+
+  //작성일 불러오기
   const date = $(
       "#main > div > div:nth-child(2) > ul > li > div > div.box_contents > div > span"
   );
@@ -36,25 +38,36 @@ app.post("/tistory", async (req, res) => {
     }
   })
 
+  //링크 불러오기
   const link = $(
       "#main > div > div > ul > li > div > div.box_contents > a.link_title"
   );
   let linkList = [];
   link.each((idx, el) => {
       linkList[idx] = {
-          date: $(el).attr("href"),
+          link: "https://sott120.tistory.com" + $(el).attr("href"),
       };
   });
 
-    const img = $(
-        "#main > div > div:nth-child(2) > ul > li > div > div.thumbnail_zone > a"
-    );
-    let imgList = [];
-    img.each((idx, el) => {
-        imgList[idx] = {
-            img: $(el).attr("style")?.substring(22).split(`')`)[0],
-        };
-    });
-  console.log(imgList);
-  res.send("zz")
+  //이미지주소 불러오기
+  const img = $(
+      "#main > div > div:nth-child(2) > ul > li > div > div.thumbnail_zone > a"
+  );
+  let imgList = [];
+  img.each((idx, el) => {
+      imgList[idx] = {
+          img: $(el).attr("style")?.substring(22).split(`')`)[0],
+      };
+  });
+
+  let allList = [];
+  allList = titleList.map((item, i) => ({
+    ...item,
+    ...dateList[i],
+    ...imgList[i],
+    ...linkList[i],
+  }));
+  console.log(allList);
+
+  res.send(allList);
 });
