@@ -4,7 +4,7 @@
     <p class="gotoblog eng"><a href="https://sott120.tistory.com/" target="_blank">Go to blog</a></p>
     <ul class="crawling_ul">
     <li v-for="(item, index) in datas" v-bind:key="index.list" class="crawling_li">
-      <a :href="item.link">
+      <a :href="item.link" target="_blank">
         <img :src="item.img" alt="썸네일 이미지">
         <div class="blog_txt">
           <h4>{{ item.title }}</h4>
