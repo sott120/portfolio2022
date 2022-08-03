@@ -4,13 +4,13 @@
     <article class="prj_wrap">
       <div class="prj_desc">
         <ul class="round_txt">
-          <li>web crolling</li>
+          <li>web crawling</li>
           <li>tweenmax</li>
         </ul>
         <h3>2022 Portfolio</h3>
         <p class="prj_txt">
-          나를 소개하고, 지금껏 작업한 것들을 보여주는 포트폴리오 사이트입니다.<br>
-          그동안 써보지 못했던 애니메이션 효과를 이용하여 작업하였습니다. 
+          나를 소개하고, 지금껏 작업한 것들을 보여주는 포트폴리오 사이트입니다. 
+          블로그 포스팅을 크롤링하여 화면에 나타내보았고, 그동안 써보지 못했던 애니메이션 효과를 이용하여 작업하였습니다. 
         </p>
         <ul class="stack">
           <li>
