@@ -4,8 +4,8 @@
     <article class="prj_wrap">
       <div class="prj_desc">
         <ul class="round_txt">
-          <li>web crawling</li>
-          <li>tweenmax</li>
+          <li>Web crawling</li>
+          <li>GSAP</li>
         </ul>
         <h3>2022 Portfolio</h3>
         <p class="prj_txt">
@@ -63,9 +63,9 @@
       <div class="prj_desc">
         <ul class="round_txt">
           <li>Team</li>
-          <li>full stack</li>
-          <li>design</li>
-          <li>deploy</li>
+          <li>Full stack</li>
+          <li>Design</li>
+          <li>Deploy</li>
         </ul>
         <h3>뚜레쥬르</h3>
         <p class="prj_txt">
@@ -126,9 +126,9 @@
       <div class="prj_desc">
         <ul class="round_txt">
           <li>1인 개발</li>
-          <li>full stack</li>
-          <li>design</li>
-          <li>deploy</li>
+          <li>Full stack</li>
+          <li>Design</li>
+          <li>Deploy</li>
         </ul>
         <h3>서문시장 야시장</h3>
         <p class="prj_txt">
