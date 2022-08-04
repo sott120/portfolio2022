@@ -25,7 +25,6 @@ export default {
   data(){
     return{
       datas: [],
-      cutdatas:[],
     }
   },
   created: function () {
@@ -37,9 +36,6 @@ export default {
         return res.data
       })
     },
-    cutData: async function(){
-      this.cutdatas = await this.datas.slice( 1, 3 ); 
-    }
   }
 }
 </script>
