@@ -68,6 +68,6 @@ app.post("/tistory", async (req, res) => {
     ...linkList[i],
   }));
   console.log(allList);
-
-  res.send(allList);
+  let sliceList = allList.slice(0,6);
+  res.send(sliceList);
 });
