@@ -31,6 +31,9 @@
                   <a href="https://sott120.tistory.com/" target="_blank">
                   <img src="../static/img/icon/tistory.svg">
                   </a>
+                  <a href="/doc/박소연_이력서_자기소개.pdf" target="_blank">
+                  <img src="../static/img/icon/resume4.png">
+                  </a>
                 </div>  
               </div>  
             </div>
