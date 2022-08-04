@@ -18,7 +18,7 @@
         <li @click="subTab" id="toy" class="tab_li">Toy project</li>
       </ul>
       <ul class="tab_cont_ul">
-        <li class="tab_cont_li on type2">
+        <!-- <li class="tab_cont_li on type2">
           <img src="../static/img/sub/daejeon.jpg" alt="memo image">
           <div class="hov_txt">
             <span class="sub_title"><em>나만의 메모장</em></span>
@@ -31,7 +31,7 @@
               <div class="go_github"><a href="">Go github</a></div>
             </div>
           </div>
-        </li>
+        </li> -->
         <li class="tab_cont_li on type2">
           <img src="../static/img/sub/todo.jpg" alt="todo image">
           <div class="hov_txt">
@@ -41,8 +41,8 @@
               할일을 추가하고 삭제할 수 있는 to do list입니다.
             </span>
             <div class="hov_btn_wrap">
-              <div class="go_site"><a href="">Go to site</a></div>
-              <div class="go_github"><a href="">Go github</a></div>
+              <div class="go_site"><a href="https://sott120.github.io/todolist/">Go to site</a></div>
+              <div class="go_github"><a href="https://github.com/sott120/todolist">Go github</a></div>
             </div>
           </div>
         </li>
@@ -289,7 +289,7 @@ em{
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(255, 255, 255, 80%);
+  background-color: rgba(229, 240, 255, 80%);
   padding: 40px 30px;
   box-sizing: border-box;
   opacity: 0;
