@@ -74,6 +74,15 @@ h2{
     color: #1E39B4;
 }
 
+.crawling_li{
+  background-color: rgba(229, 240, 255, 0);
+  transition: background-color 0.3s ease-in-out ;
+}
+
+.crawling_li:hover{
+  background-color: rgba(229, 240, 255, 1);
+}
+
 .crawling_li > a{
   display: block;
   border: 2px solid #1E39B4;
@@ -83,7 +92,8 @@ h2{
 
 .crawling_li img{
   object-fit: cover;
-  width: 223px;
+  max-width: 223px;
+  width: 100%;
   height: 120px;
 }
 
