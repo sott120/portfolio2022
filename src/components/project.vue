@@ -4,6 +4,7 @@
     <article class="prj_wrap">
       <div class="prj_desc">
         <ul class="round_txt">
+          <li>Vue.js</li>
           <li>Web crawling</li>
           <li>GSAP</li>
         </ul>
