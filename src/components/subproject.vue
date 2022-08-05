@@ -47,6 +47,21 @@
           </div>
         </li>
         <li class="tab_cont_li on type1">
+          <img src="../static/img/sub/daejeon.jpg" alt="memo image">
+          <div class="hov_txt">
+            <span class="sub_title"><em>대전문화재단</em></span>
+            <span class="sub_stack"><em>#html #css #js</em></span>
+            <span class="sub_desc">
+              대전문화재단 웹사이트 클론코딩입니다.
+            </span>
+            <div class="hov_btn_wrap clone"> 
+              <div class="go_site"><a href="http://pki0120.dothome.co.kr/dcaf/index.html" target="_blank">Main</a></div>
+              <div class="go_sub small"><a href="http://pki0120.dothome.co.kr/dcaf/sub/sub.html" target="_blank">Sub</a></div>
+              <div class="go_github small"><a href="https://github.com/sott120/Daejeon-culture-foundation" target="_blank">Git</a></div>
+            </div>
+          </div>
+        </li>
+        <li class="tab_cont_li on type1">
           <img src="../static/img/sub/pollex.jpg" alt="pollex zone image">
           <div class="hov_txt">
             <span class="sub_title"><em>Pollex zone</em></span>
@@ -55,24 +70,9 @@
               폴렉스존 웹사이트 클론코딩입니다.
             </span>
             <div class="hov_btn_wrap clone">
-              <div class="go_site"><a href="https://sott120.github.io/pollex-zone/" target="_blank">Main</a></div>
-              <div class="go_sub small"><a href="https://sott120.github.io/pollex-zone/sub/intro.html" target="_blank">Sub</a></div>
+              <div class="go_site"><a href="http://pki0120.dothome.co.kr/pollexzone/index.html" target="_blank">Main</a></div>
+              <div class="go_sub small"><a href="http://pki0120.dothome.co.kr/pollexzone/sub/intro.html" target="_blank">Sub</a></div>
               <div class="go_github small"><a href="https://github.com/sott120/pollex-zone" target="_blank">Git</a></div>
-            </div>
-          </div>
-        </li>
-        <li class="tab_cont_li on type1">
-          <img src="../static/img/sub/daejeon.jpg" alt="memo image">
-          <div class="hov_txt">
-            <span class="sub_title"><em>대전문화재단</em></span>
-            <span class="sub_stack"><em>#html #css #js</em></span>
-            <span class="sub_desc">
-              대전문화재단 웹사이트 클론코딩입니다.
-            </span>
-            <div class="hov_btn_wrap clone">
-              <div class="go_site"><a href="https://sott120.github.io/Daejeon-culture-foundation/" target="_blank">Main</a></div>
-              <div class="go_sub small"><a href="https://sott120.github.io/Daejeon-culture-foundation/sub/sub.html" target="_blank">Sub</a></div>
-              <div class="go_github small"><a href="https://github.com/sott120/Daejeon-culture-foundation" target="_blank">Git</a></div>
             </div>
           </div>
         </li>
@@ -85,8 +85,8 @@
               싱그러운집 웹사이트 클론코딩입니다.
             </span>
             <div class="hov_btn_wrap clone">
-              <div class="go_site"><a href="https://sott120.github.io/s-house-garden/" target="_blank">Main</a></div>
-              <div class="go_sub small"><a href="https://sott120.github.io/s-house-garden/sub/community.html" target="_blank">Sub</a></div>
+              <div class="go_site"><a href="http://pki0120.dothome.co.kr/s_garden/index.html" target="_blank">Main</a></div>
+              <div class="go_sub small"><a href="http://pki0120.dothome.co.kr/s_garden/sub/community.html" target="_blank">Sub</a></div>
               <div class="go_github small"><a href="https://github.com/sott120/s-house-garden" target="_blank">Git</a></div>
             </div>
           </div>
