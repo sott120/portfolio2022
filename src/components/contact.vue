@@ -1,5 +1,8 @@
 <template>
   <div id="contact" class="contact_wrap">
+    <div class="circle circle_01">
+      <span></span>
+    </div>
     <h2 class="eng">Contact me!</h2>
     <div class="arw_wrap">
       <img src="../static/img/icon/arrow_down.png" alt="down arrow">
@@ -11,8 +14,19 @@
       <h4 class="eng">psy_sott120@naver.com</h4>
     </article>
   </div>
-  <canvas id="canvas"></canvas>
+  <!-- <canvas id="canvas"></canvas> -->
   <footer>
+    <div class="eng top_wrap">
+      <div class="progress_wrap">
+        <div id="progress_bar" class="progress_bar"></div>
+      </div>
+      <div class="top_btn" >
+        <span id="btn_scroll" class="on">SCROLL</span>
+        <span @click="goTop" id="btn_top">GO TOP</span>
+      </div>
+    </div>
+
+
     <div class="ft_wrap">
       <ul>
         <li @click="scrollNav2(event,'about')">About me</li>
@@ -38,10 +52,18 @@
 </template>
 
 <script>
+import gsap from 'gsap'
+import ScrollTrigger from 'gsap/ScrollTrigger'
 export default {
   name: 'contact-page',
   props: {
-  
+  },
+  mounted: function() {
+    this.scrollCircle();
+  },
+  created: function () {
+    window.addEventListener('scroll', this.scrollE);
+    window.addEventListener('scroll', this.setProgress);
   },
   methods: {
      scrollNav2: function(evt,secId){
@@ -50,7 +72,42 @@ export default {
         section.scrollIntoView({ behavior: 'smooth' })
       }
     },
-    
+    setProgress: function(){
+      var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+      var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      var scrolled = (winScroll / height) * 100;
+      document.getElementById("progress_bar").style.height = scrolled + "%";
+    },
+    goTop: function(e){
+      e.preventDefault();
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth',
+    });
+    },
+    scrollE: function(){
+      let scroll = document.querySelector('#btn_scroll');
+      let top = document.querySelector('#btn_top');
+      if (window.scrollY >= 100) {
+        top.classList.add('on');
+        scroll.classList.remove('on');
+    } else {
+        top.classList.remove('on');
+        scroll.classList.add('on');
+    }
+    },
+    scrollCircle : function() {
+      gsap.registerPlugin(ScrollTrigger);
+      gsap.timeline({
+      scrollTrigger: {
+        trigger: ".iam",
+        start: "center center",
+        end: "top top",
+        scrub: true,
+      }
+    })
+    .from("", { opacity: 1 })
+    },
   },
 }
 </script>
@@ -58,8 +115,30 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .contact_wrap{
+  position: relative;
   text-align: center;
   scroll-margin: -300px
+}
+
+.circle{
+  width: 243px;
+  height: 243px;
+  position: absolute;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.circle_01{
+  top: 3.8%;
+  left: 8.1%;
+}
+
+.circle span{
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #0078d7;
 }
 
 h2{
@@ -111,6 +190,81 @@ footer{
   width: 100%;
   background-color: #1E39B4;
   padding: 80px 0 40px;
+}
+
+.top_wrap{
+  position: fixed;
+  right: 57px;
+  bottom: 20px;
+  z-index: 500;
+}
+
+.progress_wrap{
+  width: 3px;
+  height: 208px;
+  margin: 0 auto 127px;
+  position: relative;
+  background-color: #ececec;
+}
+
+.progress_bar{
+  display: block;
+  position: relative;
+  width: 100%;
+  background: #0078d7;
+}
+
+.progress_bar::after{
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 50%);
+  width: 14px;
+  height: 13px;
+  background-image: url(../static/img/icon/bluehrt.png);
+  background-size: 14px auto;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.top_btn{
+  display: block;
+  width: 60px;
+  height: 30px;
+  position: absolute;
+  top: 212px;
+  left: 50%;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #c7c7c7;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  -webkit-transform-origin: center left;
+  -ms-transform-origin: center left;
+  transform-origin: center left;
+}
+
+.top_btn span{
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  color: #000;
+  -webkit-transition: opacity 300ms;
+  transition: opacity 300ms;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.top_btn span.on{
+  opacity: 1;
+  visibility: visible;
 }
 
 .ft_wrap{
