@@ -134,7 +134,10 @@
         <article class="iam ml_122">
           <div class="title eng mb_80">
               <h2>I am</h2>
-            <span @click="[modal = true, noScroll()]">more info</span>
+            <span @click="[modal = true, noScroll()]">
+              more info
+              <img src="../static/img/icon/plus.png" alt="더보기버튼">
+            </span>
           </div>
           <div class="iam_cont mt_80">
               <span>안녕하세요,</span><br>
@@ -266,7 +269,7 @@
               <li>
                 <span>Document tools</span>
                 <p>
-                  Power point, 한글, word, Excel
+                  Power point, <em>한글</em>, word, Excel
                 </p>
               </li>
             </ul>
@@ -614,16 +617,43 @@ text {
 
 .title span{
   padding-right: 20px;
-  background-image: url(../static/img/icon/plus.png);
+  /* background-image: url(../static/img/icon/plus.png);
   background-repeat: no-repeat;
-  background-position: right center;
+  background-position: right center; */
   line-height: 2.5;
   cursor: pointer;
+  position: relative;
+}
+
+.title span::before{
+  position: absolute;
+  content: '';
+  display: block;
+  bottom: 5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #1E39B4;
+  transition: width .3s ease-in-out;
+  -webkit-transition: width .3s ease-in-out;
+}
+
+.title span:hover::before{
+  width: 85%;
+}
+
+.title span img{
+transform: rotate(0deg);
+transition: transform 0.3s ease-in-out;
+-webkit-transition: transform 0.3s ease-in-out;
+}
+
+.title span:hover img{
+transform: rotate(90deg);
 }
 
 .iam_cont span{
   display: block;
-
 }
 
 .iam_cont span em{
@@ -730,6 +760,10 @@ text {
 .skill_others p{
   font-weight: 400;
   color: rgba(30,57,180,60%)
+}
+
+.skill_others p > em{
+  font-family: "NotoSansKr";
 }
 
 </style>

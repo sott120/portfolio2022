@@ -61,13 +61,37 @@ h2{
 }
 
 .gotoblog > a{
-    padding-right: 16px;
-    background-image: url(../static/img/icon/txt_arrow.png);
-    background-repeat: no-repeat;
-    background-position: right 5px;
-    background-size: 7px;
-    line-height: 2.5;
-    color: #1E39B4;
+  position: relative;
+  padding-right: 16px;
+  background-image: url(../static/img/icon/txt_arrow.png);
+  background-repeat: no-repeat;
+  background-position: 95% 5px;
+  background-size: 7px;
+  line-height: 2.5;
+  color: #1E39B4;
+  transition: background-position 0.3s ease-in-out;
+}
+
+.gotoblog > a::before{
+  position: absolute;
+  content: '';
+  display: block;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #1E39B4;
+  transition: width .3s ease-in-out;
+  -webkit-transition: width .3s ease-in-out;
+}
+
+
+.gotoblog > a:hover{
+  background-position: 100% 5px;
+}
+
+.gotoblog > a:hover::before{
+  width: 100%;
 }
 
 .crawling_li{
