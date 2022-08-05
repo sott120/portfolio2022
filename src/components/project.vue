@@ -56,6 +56,9 @@
         </div>
       </div>
       <div class="mockup_img">
+        <video>
+          <source src="../static/img/seomun.mp4" type="video/mp4">
+        </video>
         <img src="../static/img/main/portfolio.png" alt="portfolio project image">
       </div>
     </article>
@@ -119,6 +122,9 @@
         </div>
       </div>
       <div class="mockup_img">
+        <video muted  id="ddu" @mouseenter="videoPlay('ddu')" @mouseleave="videoStop('ddu')">
+          <source src="../static/img/ddu.mp4" type="video/mp4">
+        </video>
         <img src="../static/img/main/ddu.png" alt="뚜레쥬르 프로젝트 이미지">
       </div>
     </article> 
@@ -182,6 +188,9 @@
         </div>
       </div>
       <div class="mockup_img">
+        <video muted id="seomun" @mouseenter ="videoPlay('seomun')" @mouseleave ="videoStop('seomun')">
+          <source src="../static/img/seomun.mp4" type="video/mp4">
+        </video>
         <img src="../static/img/main/seomun.png" alt="서문시장 프로젝트 이미지">
       </div>
     </article> 
@@ -193,8 +202,15 @@
 export default {
   name: 'project-page',
   props: {
-  
   },
+  methods: {
+    videoPlay : function(id){
+      document.getElementById(id).play();
+    },
+    videoStop : function(id){
+      document.getElementById(id).pause();
+    },
+  }
 }
 </script>
 
@@ -343,6 +359,7 @@ h3{
   box-sizing: border-box;
   border: 20px solid #f1f1f1;
   border-radius: 10px;
+  display: none;
 }
 
 .mockup_img::after{
@@ -358,4 +375,14 @@ h3{
   background-size: auto 100%;
 }
 
+.mockup_img video{
+  width: 100%;
+  box-sizing: border-box;
+  border: 25px solid #f1f1f1;
+  border-radius: 10px;
+}
+
+.mockup_img source{
+  width: 100%;
+}
 </style>
