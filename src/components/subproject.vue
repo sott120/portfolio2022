@@ -11,7 +11,7 @@
         <h1>WEB PUBLISHER &amp;&amp; WEB FRONT-END DEVELOPER</h1>
       </span>
       </div>
-      <h2 class="eng">Sub project</h2>
+      <h2 class="eng">Side project</h2>
       <ul class="tab_ul eng">
         <li @click="subTab" id="all" class="tab_li active">All</li>
         <li @click="subTab" id="clone" class="tab_li">Web clone</li>
