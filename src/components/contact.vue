@@ -3,6 +3,21 @@
     <div class="circle circle_01">
       <span></span>
     </div>
+    <div class="circle circle_02">
+      <span></span>
+    </div>
+    <div class="circle circle_03">
+      <span></span>
+    </div>
+    <div class="circle circle_04">
+      <span></span>
+    </div>
+    <div class="circle circle_05">
+      <span></span>
+    </div>
+    <div class="circle circle_06">
+      <span></span>
+    </div>
     <h2 class="eng">Contact me!</h2>
     <div class="arw_wrap">
       <img src="../static/img/icon/arrow_down.png" alt="down arrow">
@@ -52,18 +67,19 @@
 </template>
 
 <script>
-import gsap from 'gsap'
-import ScrollTrigger from 'gsap/ScrollTrigger'
+// import gsap from 'gsap'
+// import ScrollTrigger from 'gsap/ScrollTrigger'
 export default {
   name: 'contact-page',
   props: {
   },
   mounted: function() {
-    this.scrollCircle();
+    // this.scrollCircle();
   },
   created: function () {
     window.addEventListener('scroll', this.scrollE);
     window.addEventListener('scroll', this.setProgress);
+    window.addEventListener('mousemove', this.circleMove);
   },
   methods: {
      scrollNav2: function(evt,secId){
@@ -96,18 +112,26 @@ export default {
         scroll.classList.add('on');
     }
     },
-    scrollCircle : function() {
-      gsap.registerPlugin(ScrollTrigger);
-      gsap.timeline({
-      scrollTrigger: {
-        trigger: ".iam",
-        start: "center center",
-        end: "top top",
-        scrub: true,
-      }
-    })
-    .from("", { opacity: 1 })
-    },
+    // scrollCircle : function() {
+    // gsap.registerPlugin(ScrollTrigger);
+    // gsap.to(".circle_01", {scrollTrigger: ".circle_01", css:{scale: 1}, duration: 1})
+    // gsap.to(".circle_02", {scrollTrigger: ".circle_02", css:{scale: 1}, duration: 1})
+    // gsap.to(".circle_03", {scrollTrigger: ".circle_03", css:{scale: 1}, duration: 1})
+    // gsap.to(".circle_04", {scrollTrigger: ".circle_04", css:{scale: 1}, duration: 1})
+    // gsap.to(".circle_05", {scrollTrigger: ".circle_05", css:{scale: 1}, duration: 1})
+    // gsap.to(".circle_06", {scrollTrigger: ".circle_06", css:{scale: 1}, duration: 1})
+    // },
+    circleMove: function(e){
+      console.log(e.clientY)
+      let circle = document.getElementsByClassName("circle");
+      let strength = 0.05;
+      circle[0].style.transform = `translate( calc(${e.clientX} * ${strength}px), calc(${e.clientY} * ${strength}px))`;
+      circle[1].style.transform = `translate( calc(${e.clientX} * -${strength}px), calc(${e.clientY} * -${strength}px))`;
+      circle[2].style.transform = `translate( calc(${e.clientX} * -${strength}px), calc(${e.clientY} * ${strength}px))`;
+      circle[3].style.transform = `translate( calc(${e.clientX} * ${strength}px), calc(${e.clientY} * -${strength}px))`;
+      circle[4].style.transform = `translate( calc(${e.clientX} * ${strength}px), calc(${e.clientY} * ${strength}px))`;
+      circle[5].style.transform = `translate( calc(${e.clientX} * -${strength}px), calc(${e.clientY} * -${strength}px))`;
+    }
   },
 }
 </script>
@@ -117,20 +141,51 @@ export default {
 .contact_wrap{
   position: relative;
   text-align: center;
-  scroll-margin: -300px
+  scroll-margin: -300px;
+  overflow: hidden;
 }
 
 .circle{
-  width: 243px;
-  height: 243px;
   position: absolute;
   border-radius: 50%;
-  z-index: 1;
+  z-index: -1;
 }
 
 .circle_01{
   top: 3.8%;
   left: 8.1%;
+  width: 243px;
+  height: 243px;
+}
+.circle_02{
+  top: 20.8%;
+  left: 80%;
+  width: 500px;
+  height: 500px;
+}
+.circle_03{
+  top: 60.8%;
+  left: 37.1%;
+  width: 243px;
+  height: 243px;
+}
+.circle_04{
+  top: 36.8%;
+  left: 26.1%;
+  width: 130px;
+  height: 130px;
+}
+.circle_05{
+  top: 90.8%;
+  left: 74.1%;
+  width: 243px;
+  height: 243px;
+}
+.circle_06{
+  top: 70.8%;
+  left: -4.1%;
+  width: 500px;
+  height: 500px;
 }
 
 .circle span{
@@ -138,7 +193,7 @@ export default {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background-color: #0078d7;
+  background-color: #1e3ab4ee;
 }
 
 h2{
