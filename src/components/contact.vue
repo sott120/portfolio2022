@@ -1,5 +1,5 @@
 <template>
-  <div id="contact" class="contact_wrap">
+  <div @mousemove="circleMove" id="contact" class="contact_wrap">
     <div class="circle circle_01">
       <span></span>
     </div>
@@ -46,7 +46,7 @@
       <ul>
         <li @click="scrollNav2(event,'about')">About me</li>
         <li @click="scrollNav2(event,'main')">Main project</li>
-        <li @click="scrollNav2(event,'sub')">Sub project</li>
+        <li @click="scrollNav2(event,'sub')">Side project</li>
         <li @click="scrollNav2(event,'blog')">New post</li>
         <li @click="scrollNav2(event,'contact')">Contact</li>
       </ul>
@@ -79,7 +79,6 @@ export default {
   created: function () {
     window.addEventListener('scroll', this.scrollE);
     window.addEventListener('scroll', this.setProgress);
-    window.addEventListener('mousemove', this.circleMove);
   },
   methods: {
      scrollNav2: function(evt,secId){
@@ -164,7 +163,7 @@ export default {
   height: 500px;
 }
 .circle_03{
-  top: 60.8%;
+  top: 63.8%;
   left: 37.1%;
   width: 243px;
   height: 243px;
@@ -193,7 +192,7 @@ export default {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background-color: #1e3ab4ee;
+  background-color: #1e3ab4e7;
 }
 
 h2{
@@ -266,7 +265,7 @@ footer{
   display: block;
   position: relative;
   width: 100%;
-  background: #0078d7;
+  background: #0000ee;
 }
 
 .progress_bar::after{
