@@ -6,7 +6,7 @@
         <ul class="round_txt">
           <li>Vue.js</li>
           <li>Web crawling</li>
-          <li>GSAP</li>
+          <li>TweenMax</li>
         </ul>
         <h3>2022 Portfolio</h3>
         <p class="prj_txt">
@@ -74,7 +74,7 @@
         <h3>뚜레쥬르</h3>
         <p class="prj_txt">
           뚜레쥬르 사이트 리뉴얼을 팀(3명)작업으로 진행하였습니다.<br>
-          소개페이지, 공지사항 관련 페이지, 회원가입페이지를 제작하였고, 게시판 관련 DB연동을 담당하였습니다.
+          소개페이지, 공지사항 관련 페이지, 회원가입페이지를 제작하였고, 전체적인 api 통신과 DB연동, 게시판 CRUD와 그와 관련 기능들을 담당하였습니다.
         </p>
         <ul class="stack">
           <li>

@@ -41,8 +41,8 @@
               할일을 추가하고 삭제할 수 있는 to do list입니다.
             </span>
             <div class="hov_btn_wrap">
-              <div class="go_site"><a href="https://sott120.github.io/todolist/">Go to site</a></div>
-              <div class="go_github"><a href="https://github.com/sott120/todolist">Go github</a></div>
+              <div class="go_site"><a href="https://sott120.github.io/todolist/" target="_blank">Go to site</a></div>
+              <div class="go_github"><a href="https://github.com/sott120/todolist" target="_blank">Go github</a></div>
             </div>
           </div>
         </li>
