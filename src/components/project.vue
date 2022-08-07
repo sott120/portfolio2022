@@ -55,9 +55,9 @@
           </a>
         </div>
       </div>
-      <div class="mockup_img">
-        <video>
-          <source src="../static/img/seomun.mp4" type="video/mp4">
+      <div class="mockup_img aaa">
+        <video muted  id="portfolio" @mouseenter="videoPlay('portfolio')" @mouseleave="videoStop('portfolio')">
+          <source src="../static/img/portfolio.mp4" type="video/mp4">
         </video>
         <img src="../static/img/main/portfolio.png" alt="portfolio project image">
       </div>
