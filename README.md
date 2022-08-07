@@ -34,29 +34,26 @@
 
 ## 구현한 스크립트 기능
 
-+ top, about 섹션
++ __Top, About__
   + Vanilla JS로 요소의 위치로 이동하는 네비게이션 버튼 구현
   + Vanilla JS로 특정 위치까지 요소 position: fixde 후 absolute로 전환 
-  
-<br/>
-
-+ Vue 템플릿 구문을 이용한 모달창 구현
+  + Vue 템플릿 구문을 이용한 모달창 구현
   + TweenMax, GSAP의 ScrollTrigger를 이용하여 스크롤할때만 애니메이션이 실행되도록 구현
   
 <br/>
 
-+ main priject 섹션
++ __Main priject__
   + 동영상 재생, 멈춤 구현
   
 <br/>
 
-+ side project 섹션
++ __Side project__
   + Vanilla JS로 tab메뉴 클릭시 버튼에 .active추가/제거 
   + 탭메뉴 하위 컨텐츠는 버튼에 주어진 각각의 id를 switch 조건문으로 특정 id일때 type1, type2의 class .on을 추가/제거
   
 <br/>
 
-+ blog posting
++ __Blog posting__
   + 블로그 포스팅 웹 크롤링
     + express로 서버를 열어서 api통신
     + axios와 cheerio로 원하는 주소와 요소를 배열에 저장
@@ -65,6 +62,6 @@
 
 <br/>
 
-+ contact
++ __Contact__
   + Vanilla JS로 clientX, clientY 좌표값을 이용해 마우스 커서의 위치를 구함
   + mousemove 이벤트핸들러를 이용하여 요소의 style.transform에 값을 계속적으로 변경하여 마우스 위치에 반응하는 원 제작
