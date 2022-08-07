@@ -114,11 +114,12 @@ h2{
   object-fit: cover;
   max-width: 223px;
   width: 100%;
+  min-width: 220px;
   height: 120px;
 }
 
 .blog_txt{
-  width: 100%;
+  width: 65%;
   padding: 30px;
   box-sizing: border-box;
 }
