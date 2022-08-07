@@ -42,7 +42,7 @@
   
 <br/>
 
-+ __Main priject__
++ __Main project__
   + 동영상 재생, 멈춤 구현
   
 <br/>
