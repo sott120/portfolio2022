@@ -119,7 +119,7 @@
             </div>
           </div>
         </li>
-        <li class="tab_cont_li on type1 smile">
+        <li class="tab_cont_li on smile">
           <img src="../static/img/sub/smile.png" alt="빈공간 image">
         </li>
       </ul>
