@@ -121,7 +121,6 @@ export default {
     // gsap.to(".circle_06", {scrollTrigger: ".circle_06", css:{scale: 1}, duration: 1})
     // },
     circleMove: function(e){
-      console.log(e.clientY)
       let circle = document.getElementsByClassName("circle");
       let strength = 0.05;
       circle[0].style.transform = `translate( calc(${e.clientX} * ${strength}px), calc(${e.clientY} * ${strength}px))`;
