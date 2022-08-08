@@ -50,6 +50,7 @@
 + __Side project__
   + Vanilla JS로 tab메뉴 클릭시 버튼에 .active추가/제거 
   + 탭메뉴 하위 컨텐츠는 버튼에 주어진 각각의 id를 switch 조건문으로 특정 id일때 type1, type2의 class .on을 추가/제거
+  + (isotope로 요소 정렬기능 추가할 예정입니다.)
   
 <br/>
 
