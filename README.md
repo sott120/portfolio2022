@@ -64,3 +64,9 @@
 + __Contact__
   + Vanilla JS로 clientX, clientY 좌표값을 이용해 마우스 커서의 위치를 구함
   + mousemove 이벤트핸들러를 이용하여 요소의 style.transform에 값을 계속적으로 변경하여 마우스 위치에 반응하는 원 제작
+  
+  <br/>
+  
++ __etc.__
+  + 오른쪽 하단 스크롤 이벤트핸들러로 height % 변경. progress bar 구현
+  + scrollY가 100이상일때만 top 버튼 작동하도록 
