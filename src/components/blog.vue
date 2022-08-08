@@ -17,26 +17,62 @@
 </template>
 
 <script>
-import axios from 'axios';
+// import axios from 'axios';
 export default {
   name: 'blog-page',
   props: {
   },
   data(){
     return{
-      datas: [],
+      datas: [
+        {
+          title: 'JS 1일차 - 데이터 입력받고 출력하기, 변수선언(prompt, alert, console.log / let, var, const)',
+          date: '2022. 6. 7. 20:53',
+          img: 'https://img1.daumcdn.net/thumb/R750x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fc3wduk%2FbtrINuc4jVS%2FIvQzBx3xJRuSIqMkc0w8FK%2Fimg.jpg',
+          link: 'https://sott120.tistory.com/9'
+        },
+        {
+          title: 'Node express로 서버열고 express-ejs-layouts 사용하기',
+          date: '2022. 5. 15. 16:03',
+          img: 'https://img1.daumcdn.net/thumb/R750x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fb7M9Gg%2FbtrB8QT59ff%2FNArQJVv9yOkH6BuoC9e5D0%2Fimg.png',
+          link: 'https://sott120.tistory.com/8'
+        },
+        {
+          title: 'node.js 로 웹서버 만들기 (+ node express)',
+          date: '2022. 5. 8. 22:11',
+          img: 'https://img1.daumcdn.net/thumb/R750x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FcfuAzt%2FbtrIPU9Qet7%2FoDkuuRdvERUI6RmVKsSrf0%2Fimg.jpg',
+          link: 'https://sott120.tistory.com/7'
+        },
+        {
+          title: 'css로 한줄/ 여러줄 말줄임표 만들기',
+          date: '2022. 5. 1. 23:59',
+          img: 'https://img1.daumcdn.net/thumb/R750x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fc26S5Q%2FbtrI9mSOSfc%2FywPpkLsI9bmO1XNRMTeHTK%2Fimg.jpg',
+          link: 'https://sott120.tistory.com/6'
+        },
+        {
+          title: 'background-image 비율 유지하며 반응형 만드는법',
+          date: '2022. 4. 15. 00:14',
+          img: 'https://img1.daumcdn.net/thumb/R750x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fxfhke%2FbtrI3tyErLk%2FkHdtISrNiHMhujLTeF1s0K%2Fimg.jpg',
+          link: 'https://sott120.tistory.com/5'
+        },
+        {
+          title: '반응형 이미지맵  안될 때/ 카페24 모바일 이미지맵 안될 때 해결법',    date: '2022. 3. 30. 22:21',
+          img: 'https://img1.daumcdn.net/thumb/R750x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FuLpHe%2Fbtrx18xFA7C%2FVYaMdxamuLH3WeR5V1UE61%2Fimg.png',
+          link: 'https://sott120.tistory.com/4'
+        }
+      ],
     }
   },
-  created: function () {
-    window.addEventListener('load', this.crawlingData);
-  },
-  methods:{
-    crawlingData: async function(){
-      this.datas= await axios.post("http://localhost:1234/tistory").then(res => {
-        return res.data
-      })
-    },
-  }
+  // created: function () {
+  //   window.addEventListener('load', this.crawlingData);
+  // },
+  // methods:{
+  //   crawlingData: async function(){
+  //     this.datas= await axios.post("http://localhost:1234/tistory").then(res => {
+  //       return res.data
+  //     })
+  //   },
+  // }
 }
 </script>
 
