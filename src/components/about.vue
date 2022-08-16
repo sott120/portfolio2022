@@ -396,11 +396,8 @@ export default {
 
 text {
     font-family: 'Montserrat';
-    paint-order: stroke;
     stroke: #1e39b4;
     stroke-width: 2px;
-    stroke-linecap: butt;
-    stroke-linejoin: miter;
     fill: rgba(255, 255, 255, 0);
     font-size: 185px;
     font-weight: 700;
