@@ -179,6 +179,12 @@
                 </li>
                 <li>
                   <div class="skill_L">
+                    <img src="../static/img/icon/react.svg" height="30px">
+                    <span>React.js</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="skill_L">
                     <img src="../static/img/icon/nodejs.svg" height="30px">
                     <span>Node.js</span>
                   </div>
