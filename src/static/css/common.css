@@ -1,60 +1,64 @@
 ::-moz-selection {
     background: #a3a3a2;
     color: #fff;
- }
- ::selection {
-    background: #FFC83D;
+}
+::selection {
+    background: #ffc83d;
     color: #fff;
- }
+}
 
-body{
+body {
     /* max-width: 1440px;
     width: 100%;
     margin: 0 auto; */
     font-family: NotoSansKr;
     font-size: 16px;
-    color: #1E39B4;
+    color: #1e39b4;
     word-break: keep-all;
 }
 
-.eng{
+.eng {
     font-family: Montserrat;
     font-weight: 700;
 }
 
-.kor{
+.kor {
     font-family: NotoSansKr;
 }
 
-h1{
+h1 {
     font-size: 187px;
     font-weight: 700;
 }
 
-h2{
+h2 {
     font-size: 34px;
 }
 
-.ml_122{
+.ml_122 {
     margin-left: 122px;
 }
 
-.mt_400{
+.mt_400 {
     margin-top: 400px;
 }
 
-.mb_400{
+.mb_400 {
     margin-bottom: 400px;
 }
 
-.mb_100{
+.mb_100 {
     margin-bottom: 100px;
 }
 
-.mt_80{
+.mt_80 {
     margin-top: 80px;
 }
 
-.mb_80{
+.mb_80 {
     margin-bottom: 80px;
+}
+
+.mb_50 {
+    margin-bottom: 50px;
 }

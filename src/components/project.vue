@@ -1,6 +1,81 @@
 <template>
   <div id="main" class="mainproject">
     <h2 class="eng">Main project</h2>
+        <article class="prj_wrap ddu">
+      <div class="prj_desc">
+        <ul class="round_txt">
+          <li>1인개발</li>
+          <li>Full stack</li>
+          <li>React</li>
+          <li>Deploy</li>
+        </ul>
+        <h3>ofpe - 필름사진전</h3>
+        <p class="prj_txt">
+          취미로 찍은 필름사진을 친구들과 공유하고 싶어서 사이트를 제작하였습니다. 
+          기존에 사용하던 개발 환경과 완전히 다른 스택으로 제작해 어려움이 있었지만, 
+          사진 업로드, 댓글, 좋아요, 로그인 등 다양한 기능을 구현했습니다.
+        </p>
+        <ul class="stack">
+          <li>
+            <img src="../static/img/icon/react.svg" alt="react icon" height="30px">
+            <span>React</span>
+          </li>
+          <li>
+            <span class="style_icon">💅</span>
+            <span>styled component</span>
+          </li>
+          <li>
+            <img src="../static/img/icon/typescript.svg" alt="typescript icon" height="30px">
+            <span>Typescript</span>
+          </li>
+          <li>
+            <img src="../static/img/icon/redux.svg" alt="redux icon" height="26px">
+            <span>Redux</span>
+          </li>
+          <li>
+            <img src="../static/img/icon/nodejs.svg" alt="nodejs icon" height="30px">
+            <span>Node.js</span>
+          </li>
+          <li>
+            <img src="../static/img/icon/database.svg" alt="mysql icon" height="30px">
+            <span>MySQL</span>
+          </li>
+          <li>
+            <img src="../static/img/icon/bootstrap.svg" alt="bootstrap icon" height="24px">
+            <span>Bootstrap</span>
+          </li>
+          <li>
+            <img src="../static/img/icon/aws.svg" alt="aws icon" height="32px">
+            <span>aws</span>
+          </li>
+        </ul>
+        <table class="sub_txt">
+          <tr>
+            <td>작업기간 : </td>
+            <td>2022.11 ~ 2022.12</td>
+          </tr>
+          <tr>
+            <td>담당업무  :  </td>
+            <td>기획, 디자인, Front, Back, 배포</td>
+          </tr>
+        </table>
+        <div class="btns_wrap">
+          <a href="https://www.ofpe.kr/login" target="_blank" class="eng btn_site">
+            Go to site
+          </a>
+          <a href="https://github.com/sott120/ofpe" target="_blank" class="eng btn_github">
+            Git hub 
+          </a>
+        </div>
+      </div>
+      <div class="mockup_img">
+        <!-- <video muted  id="ddu" @mouseenter="videoPlay('ddu')" @mouseleave="videoStop('ddu')">
+          <source src="../static/img/ddu.mp4" type="video/mp4">
+        </video> -->
+        <img class="ofpe_img" src="../static/img/main/ofpe_login.png" alt="오프 프로젝트 이미지">
+      </div>
+    </article> 
+    <div class="mb_400"></div>
     <article class="prj_wrap">
       <div class="prj_desc">
         <ul class="round_txt">
@@ -362,6 +437,10 @@ h3{
   display: none;
 }
 
+img.ofpe_img{ 
+  display: block;   
+}
+
 .mockup_img::after{
   content: "";
   display: block;
@@ -384,5 +463,9 @@ h3{
 
 .mockup_img source{
   width: 100%;
+}
+
+.style_icon{
+  font-size: 22px;
 }
 </style>
