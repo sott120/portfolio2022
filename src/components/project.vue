@@ -60,7 +60,7 @@
           </tr>
         </table>
         <div class="btns_wrap">
-          <a href="https://www.ofpe.kr/login" target="_blank" class="eng btn_site">
+          <a href="https://ofpe.kr/login" target="_blank" class="eng btn_site">
             Go to site
           </a>
           <a href="https://github.com/sott120/ofpe" target="_blank" class="eng btn_github">
